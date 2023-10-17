@@ -59,6 +59,7 @@ public class ClientManager {
 
             transaction.commit();
         } catch (Exception e) {
+            clients.remove(newClient);
             if (transaction.isActive()) {
                 transaction.rollback();
             }

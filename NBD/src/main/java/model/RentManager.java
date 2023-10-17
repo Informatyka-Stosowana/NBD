@@ -35,6 +35,9 @@ public class RentManager {
 
             transaction.commit();
         } catch (Exception e) {
+            vehicle.setRented(false);
+            client.deleteRent(newRent);
+            rents.remove(newRent);
             if (transaction.isActive()) {
                 transaction.rollback();
             }
@@ -44,6 +47,13 @@ public class RentManager {
         }
 
         return true;
+    }
+
+    public Rent getRent(int id) {
+        for (int i = 0; i < rents.size(); i++) {
+            if (rents.get(i).getId() == id) return rents.get(i);
+        }
+        return null;
     }
 
     public void removeRent(Rent rent) {

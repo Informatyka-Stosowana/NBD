@@ -40,6 +40,7 @@ public class VehicleManager {
 
             transaction.commit();
         } catch (Exception e) {
+            vehicles.remove(newCar);
             if (transaction.isActive()) {
                 transaction.rollback();
             }

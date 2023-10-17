@@ -17,7 +17,7 @@ public class Client {
     private String firstName;
     // not empty
     private String lastName;
-    @OneToMany
+    @OneToMany(mappedBy = "client")
     private List<Rent> currentRents = new ArrayList<>();
 
     public Client(int personalId, Address address, String firstName, String lastName) {

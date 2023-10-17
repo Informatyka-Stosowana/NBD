@@ -34,8 +34,12 @@ public class Main {
         VehicleManager vm = new VehicleManager(new Repository<>(), emf);
 
         cm.addClient(1, "Rafał", "Woźniak", "Uliczna", 12, "Sosnowiec", 12121);
+        cm.addClient(2, "Raf3ł", "Woźniak", "Uliczna", 12, "Sosnowiec", 12121);
         vm.addCar(1, 500, "red", 200.5, 5);
+        vm.addCar(2, 500, "red", 200.5, 5);
         rm.addRent(cm.getClient(1), vm.getVehicle(1), 1);
+
+
 
 //        Address address1 = new Address("Uliczna", 12, "Sosnowiec", 12121);
 //        Client client1 = new Client(1, address1, "Rafał", "Woźniak");
