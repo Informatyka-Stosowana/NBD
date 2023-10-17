@@ -1,14 +1,14 @@
 package model;
 
+import jakarta.persistence.Entity;
+
 import java.util.*;
 
 public class RentManager {
 
     private int MAX_RENTS = 2;
-    private ArrayList<Rent> archiveRents = new ArrayList<>();
-    public RentManager() {
-    }
-
+    private Repository<Rent> rents = new Repository<>();
+    
     public boolean addRent(Client client, Vehicle vehicle, int id) {
         // Spełnienie wymagań biznesowych
         if (client.getCurrentRents().size() >= MAX_RENTS) return false;
@@ -21,19 +21,16 @@ public class RentManager {
         // em.getTransaction().begin();
         vehicle.setRented(true);
         client.addRent(newRent);
+        rents.add(newRent);
+        // em.persist(newRent);
         // em.getTransaction().commit();
         return true;
     }
 
-    public void removeRent(Client client, int id) {
-        ArrayList<Rent> currentRents = client.getCurrentRents();
-        for (Rent currentRent : currentRents) {
-            if (currentRent.getId() == id) {
-                currentRent.getVehicle().setRented(false);
-                client.deleteRent(currentRent);
-                archiveRents.add(currentRent);
-                return;
-            }
-        }
+    public void removeRent(Rent rent) {
+        rent.getVehicle().setRented(false);
+        rent.getClient().deleteRent(rent);
+        rent.setArchive(true);
+        // zmiana w bazie
     }
 }

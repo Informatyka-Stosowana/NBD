@@ -1,5 +1,11 @@
 package model;
 
+import jakarta.persistence.Access;
+import jakarta.persistence.AccessType;
+import jakarta.persistence.Embeddable;
+
+@Embeddable
+@Access(AccessType.FIELD)
 public class Address {
     private String street;
     private int streetNumber;
@@ -12,6 +18,8 @@ public class Address {
         this.city = city;
         this.postcode = postcode;
     }
+
+    public Address() {}
 
     public String getStreet() {
         return street;

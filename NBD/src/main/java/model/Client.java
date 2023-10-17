@@ -1,13 +1,20 @@
 package model;
 
+import com.sun.istack.NotNull;
+import jakarta.persistence.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
+@Access(AccessType.FIELD)
 public class Client {
+    @Id
     private int personalId;
     private Address address;
     private String firstName;
     private String lastName;
+    @OneToMany
     private ArrayList<Rent> currentRents = new ArrayList<>();
 
     public Client(int personalId, Address address, String firstName, String lastName) {
@@ -16,6 +23,8 @@ public class Client {
         this.firstName = firstName;
         this.lastName = lastName;
     }
+
+    public Client() {}
 
     public int getPersonalId() {
         return personalId;

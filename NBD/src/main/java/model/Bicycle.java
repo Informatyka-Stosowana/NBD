@@ -1,5 +1,12 @@
 package model;
 
+import jakarta.persistence.Access;
+import jakarta.persistence.AccessType;
+import jakarta.persistence.DiscriminatorValue;
+import jakarta.persistence.Entity;
+@Entity
+@Access(AccessType.FIELD)
+@DiscriminatorValue("bicycle")
 public class Bicycle extends Vehicle {
     private boolean helperWheels;
 
@@ -7,6 +14,8 @@ public class Bicycle extends Vehicle {
         super(id, weight, color, price);
         this.helperWheels = helperWheels;
     }
+
+    public Bicycle() {}
 
     public boolean isHelperWheels() {
         return helperWheels;
