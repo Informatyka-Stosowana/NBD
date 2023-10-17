@@ -11,11 +11,14 @@ import java.util.List;
 public class Client {
     @Id
     private int personalId;
+    @NotNull
     private Address address;
+    // not empty
     private String firstName;
+    // not empty
     private String lastName;
     @OneToMany
-    private ArrayList<Rent> currentRents = new ArrayList<>();
+    private List<Rent> currentRents = new ArrayList<>();
 
     public Client(int personalId, Address address, String firstName, String lastName) {
         this.personalId = personalId;
@@ -49,7 +52,7 @@ public class Client {
         currentRents.remove(rent);
     }
 
-    public ArrayList<Rent> getCurrentRents() {
+    public List<Rent> getCurrentRents() {
         return currentRents;
     }
 }

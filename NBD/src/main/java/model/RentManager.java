@@ -1,14 +1,20 @@
 package model;
 
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 
 import java.util.*;
 
 public class RentManager {
 
     private int MAX_RENTS = 2;
-    private Repository<Rent> rents = new Repository<>();
-    
+    private Repository<Rent> rents;
+    private EntityManagerFactory emf;
+
+    public RentManager(Repository<Rent> rents, EntityManagerFactory emf) {
+        this.rents = rents;
+        this.emf = emf;
+    }
+
     public boolean addRent(Client client, Vehicle vehicle, int id) {
         // Spełnienie wymagań biznesowych
         if (client.getCurrentRents().size() >= MAX_RENTS) return false;
@@ -16,14 +22,27 @@ public class RentManager {
 
         Rent newRent = new Rent(id, client, vehicle);
 
-        // EntityManagerFactory emf = Persistence.createEntityManagerFactory("test");
-        // EntityManager em = emf.createEntityManager();
-        // em.getTransaction().begin();
-        vehicle.setRented(true);
-        client.addRent(newRent);
-        rents.add(newRent);
-        // em.persist(newRent);
-        // em.getTransaction().commit();
+        EntityManager em = emf.createEntityManager();
+        EntityTransaction transaction = em.getTransaction();
+        try {
+            transaction.begin();
+
+            vehicle.setRented(true);
+            client.addRent(newRent);
+            rents.add(newRent);
+
+            em.persist(newRent);
+
+            transaction.commit();
+        } catch (Exception e) {
+            if (transaction.isActive()) {
+                transaction.rollback();
+            }
+            return false;
+        } finally {
+            em.close();
+        }
+
         return true;
     }
 

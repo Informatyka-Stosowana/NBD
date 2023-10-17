@@ -1,15 +1,19 @@
 package model;
 
+import com.sun.istack.NotNull;
 import jakarta.persistence.Access;
 import jakarta.persistence.AccessType;
 import jakarta.persistence.Embeddable;
-
 @Embeddable
 @Access(AccessType.FIELD)
 public class Address {
+    // not empty
     private String street;
+    @NotNull
     private int streetNumber;
+    // not empty
     private String city;
+    @NotNull
     private int postcode;
 
     public Address(String street, int streetNumber, String city, int postcode) {

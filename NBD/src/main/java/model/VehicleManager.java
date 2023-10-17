@@ -1,13 +1,16 @@
 package model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.*;
 
 import java.util.ArrayList;
 public class VehicleManager {
-    private Repository<Vehicle> vehicles = new Repository<>();
+    private Repository<Vehicle> vehicles;
+    private EntityManagerFactory emf;
+
+    public VehicleManager(Repository<Vehicle> vehicles, EntityManagerFactory emf) {
+        this.vehicles = vehicles;
+        this.emf = emf;
+    }
 
     public boolean addCar(int id, int weight, String color, double price, int numberOfSeats) {
         for (int i = 0; i < vehicles.size(); i++) {
@@ -16,12 +19,35 @@ public class VehicleManager {
         }
         Car newCar = new Car(id, weight, color, price, numberOfSeats);
 
-        // EntityManagerFactory emf = Persistence.createEntityManagerFactory("test");
-        // EntityManager em = emf.createEntityManager();
-        // em.getTransaction().begin();
-        vehicles.add(newCar);
-        // em.persist(newCar);
-        // em.getTransaction().commit();
+//        EntityManagerFactory emf = Persistence.createEntityManagerFactory("test");
+//        EntityManager em = emf.createEntityManager();
+//        em.getTransaction().begin();
+//
+//        vehicles.add(newCar);
+//
+//        em.persist(newCar);
+//        em.getTransaction().commit();
+
+//        EntityManagerFactory emf = Persistence.createEntityManagerFactory("test");
+        EntityManager em = emf.createEntityManager();
+        EntityTransaction transaction = em.getTransaction();
+
+        try {
+            transaction.begin();
+
+            vehicles.add(newCar);
+            em.persist(newCar);
+
+            transaction.commit();
+        } catch (Exception e) {
+            if (transaction.isActive()) {
+                transaction.rollback();
+            }
+            return false;
+        } finally {
+            em.close();
+        }
+
         return true;
     }
 

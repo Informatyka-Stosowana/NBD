@@ -1,5 +1,6 @@
 package model;
 
+import com.sun.istack.NotNull;
 import jakarta.persistence.*;
 
 @Entity
@@ -10,9 +11,13 @@ import jakarta.persistence.*;
 public abstract class Vehicle {
     @Id
     private int id;
+    @NotNull
     private int weight;
+    @NotNull
     private String color;
+    @NotNull
     private double price;
+    @NotNull
     private boolean isRented;
 
 
