@@ -12,35 +12,17 @@ public class VehicleManager {
         this.emf = emf;
     }
 
-    public boolean addCar(int id, int weight, String color, double price, int numberOfSeats) {
-        for (int i = 0; i < vehicles.size(); i++) {
-            Vehicle vehicle = vehicles.get(i);
-            if (vehicle.getId() == id) return false;
-        }
-        Car newCar = new Car(id, weight, color, price, numberOfSeats);
-
-//        EntityManagerFactory emf = Persistence.createEntityManagerFactory("test");
-//        EntityManager em = emf.createEntityManager();
-//        em.getTransaction().begin();
-//
-//        vehicles.add(newCar);
-//
-//        em.persist(newCar);
-//        em.getTransaction().commit();
-
-//        EntityManagerFactory emf = Persistence.createEntityManagerFactory("test");
+    private boolean addVehicle(Vehicle vehicle) {
         EntityManager em = emf.createEntityManager();
         EntityTransaction transaction = em.getTransaction();
-
         try {
             transaction.begin();
 
-            vehicles.add(newCar);
-            em.persist(newCar);
-
+            vehicles.add(vehicle);
+            em.persist(vehicle);
             transaction.commit();
         } catch (Exception e) {
-            vehicles.remove(newCar);
+            vehicles.remove(vehicle);
             if (transaction.isActive()) {
                 transaction.rollback();
             }
@@ -48,42 +30,49 @@ public class VehicleManager {
         } finally {
             em.close();
         }
-
         return true;
+    }
+
+    public boolean addCar(int id, int weight, String color, double price, int numberOfSeats) {
+        for (int i = 0; i < vehicles.size(); i++) {
+            Vehicle vehicle = vehicles.get(i);
+            if (vehicle.getId() == id) return false;
+        }
+        return addVehicle(new Car(id, weight, color, price, numberOfSeats));
     }
 
     public boolean addBicycle(int id, int weight, String color, double price, boolean helperWheels) {
         for (int i = 0; i < vehicles.size(); i++) {
             if (vehicles.get(i).getId() == id) return false;
         }
-        Bicycle newBicycle = new Bicycle(id, weight, color, price, helperWheels);
-
-        // EntityManagerFactory emf = Persistence.createEntityManagerFactory("test");
-        // EntityManager em = emf.createEntityManager();
-        // em.getTransaction().begin();
-        vehicles.add(newBicycle);
-        // em.persist(newBicycle);
-        // em.getTransaction().commit();
-        return true;
+        return addVehicle(new Bicycle(id, weight, color, price, helperWheels));
     }
 
     public boolean addMotorcycle(int id, int weight, String color, double price, int engineDisplacement) {
         for (int i = 0; i < vehicles.size(); i++) {
             if (vehicles.get(i).getId() == id) return false;
         }
-        Motorcycle newMotorcycle = new Motorcycle(id, weight, color, price, engineDisplacement);
-
-        // EntityManagerFactory emf = Persistence.createEntityManagerFactory("test");
-        // EntityManager em = emf.createEntityManager();
-        // em.getTransaction().begin();
-        vehicles.add(newMotorcycle);
-        // em.persist(newMotorcycle);
-        // em.getTransaction().commit();
-        return true;
+        return addVehicle(new Motorcycle(id, weight, color, price, engineDisplacement));
     }
 
     public void removeVehicle(Vehicle vehicle) {
-        vehicles.remove(vehicle);
+        EntityManager em = emf.createEntityManager();
+        EntityTransaction transaction = em.getTransaction();
+        try {
+            transaction.begin();
+
+            vehicles.remove(vehicle);
+            em.remove(em.find(Vehicle.class, vehicle.getId()));
+
+            transaction.commit();
+        } catch (Exception e) {
+            vehicles.add(vehicle);
+            if (transaction.isActive()) {
+                transaction.rollback();
+            }
+        } finally {
+            em.close();
+        }
     }
 
     public Vehicle getVehicle(int id) {

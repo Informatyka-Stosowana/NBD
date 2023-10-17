@@ -4,6 +4,7 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
+import jakarta.transaction.Transactional;
 
 import java.util.ArrayList;
 
@@ -37,20 +38,9 @@ public class ClientManager {
             }
         }
         Client newClient = new Client(personalId, address, firstName, lastName);
-//        EntityManagerFactory emf = Persistence.createEntityManagerFactory("test");
-//        EntityManager em = emf.createEntityManager();
-//        em.getTransaction().begin();
-//
-//        clients.add(newClient);
-//
-//        em.persist(newClient);
-//        em.getTransaction().commit();
-//
-//        emf.close();
-//
+
         EntityManager em = emf.createEntityManager();
         EntityTransaction transaction = em.getTransaction();
-
         try {
             transaction.begin();
 
@@ -72,6 +62,22 @@ public class ClientManager {
     }
 
     public void removeClient(Client client) {
-        clients.remove(client);
+        EntityManager em = emf.createEntityManager();
+        EntityTransaction transaction = em.getTransaction();
+        try {
+            transaction.begin();
+            clients.remove(client);
+
+            em.remove(em.find(Client.class, client.getPersonalId()));
+
+            transaction.commit();
+        } catch (Exception e) {
+            clients.add(client);
+            if (transaction.isActive()) {
+                transaction.rollback();
+            }
+        } finally {
+            em.close();
+        }
     }
 }

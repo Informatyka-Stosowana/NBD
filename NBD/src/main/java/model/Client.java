@@ -48,7 +48,7 @@ public class Client {
     public void addRent(Rent rent) {
         currentRents.add(rent);
     }
-    public void deleteRent(Rent rent) {
+    public void removeRent(Rent rent) {
         currentRents.remove(rent);
     }
 

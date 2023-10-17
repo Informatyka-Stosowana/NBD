@@ -16,8 +16,8 @@ public class Rent {
     @NotNull
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
     private Client client; // do sprawdzenia
-    @OneToOne
     @NotNull
+    @OneToOne
     private Vehicle vehicle;
 
     public Rent(int id, Client client, Vehicle vehicle) {

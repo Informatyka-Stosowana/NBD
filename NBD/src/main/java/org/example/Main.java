@@ -27,7 +27,6 @@ public class Main {
 //        em1.persist(client1);
 //        em1.getTransaction().commit();
 
-
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("test");
         RentManager rm = new RentManager(new Repository<>(), emf);
         ClientManager cm = new ClientManager(new Repository<>(), emf);
@@ -37,9 +36,14 @@ public class Main {
         cm.addClient(2, "Raf3ł", "Woźniak", "Uliczna", 12, "Sosnowiec", 12121);
         vm.addCar(1, 500, "red", 200.5, 5);
         vm.addCar(2, 500, "red", 200.5, 5);
+
         rm.addRent(cm.getClient(1), vm.getVehicle(1), 1);
 
+        vm.removeVehicle(vm.getVehicle(2));
 
+//        cm.removeClient(cm.getClient(2));
+
+//        System.out.println(rm.getRent(1).getVehicle().isRented());
 
 //        Address address1 = new Address("Uliczna", 12, "Sosnowiec", 12121);
 //        Client client1 = new Client(1, address1, "Rafał", "Woźniak");

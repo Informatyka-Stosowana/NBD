@@ -2,8 +2,6 @@ package model;
 
 import jakarta.persistence.*;
 
-import java.util.*;
-
 public class RentManager {
 
     private int MAX_RENTS = 2;
@@ -26,17 +24,20 @@ public class RentManager {
         EntityTransaction transaction = em.getTransaction();
         try {
             transaction.begin();
+            em.find(Vehicle.class, vehicle.getId(), LockModeType.PESSIMISTIC_WRITE);
+            em.find(Client.class, client.getPersonalId(), LockModeType.PESSIMISTIC_WRITE);
 
             vehicle.setRented(true);
             client.addRent(newRent);
             rents.add(newRent);
 
             em.persist(newRent);
+            em.merge(vehicle);
 
             transaction.commit();
         } catch (Exception e) {
             vehicle.setRented(false);
-            client.deleteRent(newRent);
+            client.removeRent(newRent);
             rents.remove(newRent);
             if (transaction.isActive()) {
                 transaction.rollback();
@@ -56,10 +57,33 @@ public class RentManager {
         return null;
     }
 
-    public void removeRent(Rent rent) {
+    public void endRent(Rent rent) {
         rent.getVehicle().setRented(false);
-        rent.getClient().deleteRent(rent);
+        rent.getClient().removeRent(rent);
         rent.setArchive(true);
-        // zmiana w bazie
+
+        EntityManager em = emf.createEntityManager();
+        EntityTransaction transaction = em.getTransaction();
+        try {
+            transaction.begin();
+
+            rent.getVehicle().setRented(false);
+            rent.getClient().removeRent(rent);
+            rent.setArchive(true);
+
+            em.merge(rent.getVehicle());
+            em.merge(rent);
+
+            transaction.commit();
+        } catch (Exception e) {
+            rent.getVehicle().setRented(true);
+            rent.getClient().addRent(rent);
+            rent.setArchive(false);
+            if (transaction.isActive()) {
+                transaction.rollback();
+            }
+        } finally {
+            em.close();
+        }
     }
 }
