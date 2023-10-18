@@ -5,6 +5,7 @@
              version="3.0">
   <persistence-unit name="test" transaction-type="RESOURCE_LOCAL">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
     <class>model.Client</class>
     <class>model.Vehicle</class>
     <class>model.Car</class>
@@ -21,6 +22,9 @@
       <property name="jakarta.persistence.jdbc.user" value="nbd"/>
       <property name="jakarta.persistence.jdbc.password" value="nbdpassword"/>
       <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create"/>
+
+      <!--Set the isolation level to READ_COMMITTED-->
+      <property name="hibernate.connection.isolation" value="2" />
     </properties>
   </persistence-unit>
 </persistence>
