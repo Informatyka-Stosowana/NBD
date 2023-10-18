@@ -2,7 +2,6 @@ package model;
 
 import jakarta.persistence.*;
 
-import java.util.ArrayList;
 public class VehicleManager {
     private Repository<Vehicle> vehicles;
     private EntityManagerFactory emf;

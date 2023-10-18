@@ -2,7 +2,6 @@ package model;
 
 import com.sun.istack.NotNull;
 import jakarta.persistence.*;
-import org.hibernate.annotations.ManyToAny;
 
 @Entity
 @Access(AccessType.FIELD)
@@ -15,7 +14,7 @@ public class Rent {
     private boolean archive = false;
     @NotNull
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
-    private Client client; // do sprawdzenia
+    private Client client;
     @NotNull
     @OneToOne
     private Vehicle vehicle;

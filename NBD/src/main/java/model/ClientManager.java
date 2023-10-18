@@ -3,10 +3,6 @@ package model;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
-import jakarta.persistence.Persistence;
-import jakarta.transaction.Transactional;
-
-import java.util.ArrayList;
 
 public class ClientManager {
     private Repository<Client> clients;
@@ -16,7 +12,6 @@ public class ClientManager {
         this.clients = clients;
         this.emf = emf;
     }
-
 
     public Client getClient(int id) {
         for (int i = 0; i < clients.size(); i++) {
