@@ -4,14 +4,16 @@ import com.sun.istack.NotNull;
 import jakarta.persistence.Access;
 import jakarta.persistence.AccessType;
 import jakarta.persistence.Embeddable;
+import jakarta.validation.constraints.NotEmpty;
+
 @Embeddable
 @Access(AccessType.FIELD)
 public class Address {
-    // not empty
+    @NotEmpty
     private String street;
     @NotNull
     private int streetNumber;
-    // not empty
+    @NotEmpty
     private String city;
     @NotNull
     private int postcode;

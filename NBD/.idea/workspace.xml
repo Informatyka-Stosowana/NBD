@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21255cd7-98e6-4e4e-abc1-d513566396e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/DatabaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/NBD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/NBD.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
@@ -29,11 +28,10 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Vehicle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/VehicleManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/VehicleManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DatabaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DatabaseTest.java" afterDir="false" />
     </list>
     <list id="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" name="Changes by domin" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Bicycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Bicycle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/RentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/RentManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,19 +49,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/model/RentManager.java">
-      <ranges>
-        <range start1="3" end1="5" start2="3" end2="3" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="28" end1="28" start2="26" end2="28" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
-        <range start1="34" end1="34" start2="34" end2="35" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="38" end1="39" start2="39" end2="40" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="58" end1="59" start2="59" end2="60" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="60" end1="61" start2="61" end2="62" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="62" end1="63" start2="63" end2="87" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-      </ranges>
-    </file>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -75,35 +60,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "ORM",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/domin/Documents/FTIMS/SEMESTR_V/nierelacyjne_bazy_danych/NBD/NBD",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ORM&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/domin/Documents/FTIMS/SEMESTR_V/nierelacyjne_bazy_danych/NBD/NBD&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\habso\Documents\Pl\NBD\NBD\NBD\src\main\resources\META-INF" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DatabaseTest.removeTest">
+  <component name="RunManager" selected="JUnit.DatabaseTest.emptyFieldTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="NBD" />
@@ -126,21 +111,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DatabaseTest.addClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="NBD" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DatabaseTest" />
-      <option name="METHOD_NAME" value="addClientTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DatabaseTest.concurrentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NBD" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DatabaseTest" />
       <option name="METHOD_NAME" value="concurrentTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DatabaseTest.emptyFieldTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NBD" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DatabaseTest" />
+      <option name="METHOD_NAME" value="emptyFieldTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -158,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DatabaseTest.removeTest" />
+        <item itemvalue="JUnit.DatabaseTest.emptyFieldTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.DatabaseTest" />
+        <item itemvalue="JUnit.DatabaseTest.removeTest" />
         <item itemvalue="JUnit.DatabaseTest.concurrentTest" />
-        <item itemvalue="JUnit.DatabaseTest.addClientTest" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +164,9 @@
       <workItem from="1697475923029" duration="3161000" />
       <workItem from="1697533903450" duration="3209000" />
       <workItem from="1697539227747" duration="4127000" />
-      <workItem from="1697551493213" duration="16575000" />
+      <workItem from="1697551493213" duration="16991000" />
+      <workItem from="1697570436704" duration="215000" />
+      <workItem from="1697638762977" duration="1183000" />
     </task>
     <servers />
   </component>

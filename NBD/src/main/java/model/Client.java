@@ -2,6 +2,7 @@ package model;
 
 import com.sun.istack.NotNull;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotEmpty;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,9 +14,9 @@ public class Client {
     private int personalId;
     @NotNull
     private Address address;
-    // not empty
+    @NotEmpty
     private String firstName;
-    // not empty
+    @NotEmpty
     private String lastName;
     @OneToMany(mappedBy = "client")
     private List<Rent> currentRents = new ArrayList<>();
