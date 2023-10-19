@@ -11,63 +11,72 @@ public class DatabaseTest {
     public void addTest() {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("test");
         EntityManager em = emf.createEntityManager();
-        ClientManager cm = new ClientManager(new Repository<>(), emf);
+        ClientRepository cr = new ClientRepository(emf);
 
-        cm.addClient(1, "Paweł", "Stos", "Uliczna", 12, "Sosnowiec", 12121);
+        // Test if client in db
+        cr.addClient(1, "Paweł", "Stos", "Uliczna", 12, "Sosnowiec", 12121);
+        Assertions.assertEquals(em.find(Client.class, 1).getPersonalId(), 1);
 
-        Client foundClient = em.find(Client.class, cm.getClient(1).getPersonalId());
-        Assertions.assertEquals(foundClient.getPersonalId(), cm.getClient(1).getPersonalId());
+        // Test same id
+        cr.addClient(1, "Jacek", "Stos", "Uliczna", 12, "Sosnowiec", 12121);
+        Assertions.assertNotEquals(cr.getClient(1).getFirstName(), "Jacek");
     }
 
     @Test
     public void removeTest() {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("test");
         EntityManager em = emf.createEntityManager();
-        ClientManager cm = new ClientManager(new Repository<>(), emf);
+        ClientRepository cr = new ClientRepository(emf);
 
-        cm.addClient(1, "Paweł", "Stos", "Uliczna", 12, "Sosnowiec", 12121);
+        cr.addClient(1, "Paweł", "Stos", "Uliczna", 12, "Sosnowiec", 12121);
 
-        Client foundClient = em.find(Client.class, cm.getClient(1).getPersonalId());
-        Assertions.assertEquals(foundClient.getPersonalId(), cm.getClient(1).getPersonalId());
+        // Test if client in db
+        Assertions.assertNotNull(em.find(Client.class, 1));
 
-        cm.removeClient(cm.getClient(1));
-
+        // Test if client not in db
+        cr.removeClient(cr.getClient(1));
         em.clear();
         Assertions.assertNull(em.find(Client.class, 1));
-    }
-
-    @Test
-    public void repositoryTest() {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("test");
-        Repository<Client> clientRepository = new Repository<>();
-        ClientManager cm = new ClientManager(clientRepository, emf);
-
-        cm.addClient(1, "Paweł", "Stos", "Uliczna", 12, "Sosnowiec", 12121);
-
-        Assertions.assertEquals(clientRepository.get(0).getPersonalId(), 1);
-
-        cm.removeClient(cm.getClient(1));
-
-        Assertions.assertThrows(IndexOutOfBoundsException.class, () -> { clientRepository.get(0); });
     }
 
     @Test
     public void maxRentTest() {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("test");
         EntityManager em = emf.createEntityManager();
-        ClientManager cm = new ClientManager(new Repository<>(), emf);
-        VehicleManager vm = new VehicleManager(new Repository<>(), emf);
-        RentManager rm = new RentManager(new Repository<>(), emf);
+        ClientRepository cr = new ClientRepository(emf);
+        VehicleRepository vr = new VehicleRepository(emf);
+        RentRepository rr = new RentRepository(emf, cr, vr);
 
-        cm.addClient(1, "Paweł", "Stos", "Uliczna", 12, "Sosnowiec", 12121);
-        vm.addCar(1, 2000, "red", 1000, 5);
-        vm.addCar(2, 2000, "red", 1000, 5);
-        vm.addCar(3, 2000, "red", 1000, 5);
+        cr.addClient(1, "Paweł", "Stos", "Uliczna", 12, "Sosnowiec", 12121);
+        vr.addCar(1, 2000, "red", 1000, 5);
+        vr.addCar(2, 2000, "red", 1000, 5);
+        vr.addCar(3, 2000, "red", 1000, 5);
 
-        rm.addRent(cm.getClient(1), vm.getVehicle(1), 1);
-        rm.addRent(cm.getClient(1), vm.getVehicle(2), 2);
+        rr.addRent(1, 1, 1);
+        rr.addRent(1, 2, 2);
 
-        Assertions.assertFalse(rm.addRent(cm.getClient(1), vm.getVehicle(3), 3));
+        Assertions.assertFalse(rr.addRent(1, 3, 3));
         Assertions.assertNull(em.find(Rent.class, 3));
+    }
+
+    @Test
+    public void removeRentTest() {
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("test");
+        EntityManager em = emf.createEntityManager();
+        ClientRepository cr = new ClientRepository(emf);
+        VehicleRepository vr = new VehicleRepository(emf);
+        RentRepository rr = new RentRepository(emf, cr, vr);
+
+        cr.addClient(1, "Paweł", "Stos", "Uliczna", 12, "Sosnowiec", 12121);
+        vr.addCar(1, 2000, "red", 1000, 5);
+
+        rr.addRent(1, 1, 1);
+
+        Assertions.assertNotNull(rr.getRent(1));
+
+        rr.endRent(rr.getRent(1));
+
+        Assertions.assertFalse(rr.getRent(1).getVehicle().isRented());
+        Assertions.assertEquals(0, rr.getRent(1).getClient().getCurrentRents().size());
     }
 }

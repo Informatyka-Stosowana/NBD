@@ -13,7 +13,7 @@ public class Rent {
     @NotNull
     private boolean archive = false;
     @NotNull
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
+    @ManyToOne
     private Client client;
     @NotNull
     @OneToOne

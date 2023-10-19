@@ -17,7 +17,7 @@ public class Client {
     private String firstName;
     @NotEmpty
     private String lastName;
-    @OneToMany(mappedBy = "client")
+    @OneToMany
     private List<Rent> currentRents = new ArrayList<>();
 
     public Client(int personalId, Address address, String firstName, String lastName) {
@@ -48,8 +48,10 @@ public class Client {
     public void addRent(Rent rent) {
         currentRents.add(rent);
     }
-    public void removeRent(Rent rent) {
-        currentRents.remove(rent);
+    public void removeRent(int rentId) {
+        for (int i = 0; i < currentRents.size(); i++) {
+            if (currentRents.get(i).getId() == rentId) currentRents.remove(i);
+        }
     }
 
     public List<Rent> getCurrentRents() {

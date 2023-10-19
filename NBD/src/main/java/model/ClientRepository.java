@@ -4,47 +4,34 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 
-public class ClientManager {
-    private Repository<Client> clients;
+public class ClientRepository {
     private EntityManagerFactory emf;
 
-    public ClientManager(Repository<Client> clients, EntityManagerFactory emf) {
-        this.clients = clients;
+    public ClientRepository(EntityManagerFactory emf) {
         this.emf = emf;
     }
 
     public Client getClient(int id) {
-        for (int i = 0; i < clients.size(); i++) {
-            Client client = clients.get(i);
-            if (client.getPersonalId() == id) {
-                return client;
-            }
-        }
-        return null;
+        EntityManager em = emf.createEntityManager();
+        return em.find(Client.class, id);
     }
 
     public boolean addClient(int personalId, String firstName, String lastName, String street, int streetNumber, String city, int postcode) {
+        EntityManager em = emf.createEntityManager();
         // Spełnienie wymagań biznesowych
+        if (em.find(Client.class, personalId) != null) return false;
+
         Address address = new Address(street,streetNumber, city, postcode);
-        for (int i = 0; i < clients.size(); i++) {
-            Client client = clients.get(i);
-            if (client.getPersonalId() == personalId) {
-                return false;
-            }
-        }
         Client newClient = new Client(personalId, address, firstName, lastName);
 
-        EntityManager em = emf.createEntityManager();
         EntityTransaction transaction = em.getTransaction();
         try {
             transaction.begin();
 
-            clients.add(newClient);
             em.persist(newClient);
 
             transaction.commit();
         } catch (Exception e) {
-            clients.remove(newClient);
             if (transaction.isActive()) {
                 transaction.rollback();
             }
@@ -61,13 +48,11 @@ public class ClientManager {
         EntityTransaction transaction = em.getTransaction();
         try {
             transaction.begin();
-            clients.remove(client);
 
             em.remove(em.find(Client.class, client.getPersonalId()));
 
             transaction.commit();
         } catch (Exception e) {
-            clients.add(client);
             if (transaction.isActive()) {
                 transaction.rollback();
             }
