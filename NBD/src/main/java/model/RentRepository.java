@@ -17,23 +17,19 @@ public class RentRepository {
 
     public boolean addRent(int clientId, int vehicleId, int id) {
         EntityManager em = emf.createEntityManager();
-        Client client = em.find(Client.class, clientId);
-        Vehicle vehicle = em.find(Vehicle.class, vehicleId);
-
-        if (client == null || vehicle == null) return false;
-
-        Rent newRent = new Rent(id, client, vehicle);
-
         EntityTransaction transaction = em.getTransaction();
         try {
             transaction.begin();
-            em.find(Vehicle.class, vehicleId, LockModeType.PESSIMISTIC_WRITE);
-            em.find(Client.class, clientId, LockModeType.PESSIMISTIC_WRITE);
+            Vehicle vehicle = em.find(Vehicle.class, vehicleId, LockModeType.PESSIMISTIC_WRITE);
+            Client client = em.find(Client.class, clientId, LockModeType.PESSIMISTIC_WRITE);
 
             // Spełnienie wymagań biznesowych
+            if (client == null) throw new Exception("Client does not exist");
+            if (vehicle == null) throw new Exception("Vehicle does not exist");
             if (vehicle.isRented()) throw new Exception("Vehicle is rented");
             if (client.getCurrentRents().size() >= MAX_RENTS) throw new Exception("Client max rents");
 
+            Rent newRent = new Rent(id, client, vehicle);
             vehicle.setRented(true);
             client.addRent(newRent);
 
@@ -49,7 +45,6 @@ public class RentRepository {
         } finally {
             em.close();
         }
-
         return true;
     }
 
@@ -75,7 +70,6 @@ public class RentRepository {
             em.merge(vehicle);
             em.merge(client);
             em.merge(rent);
-
 
             transaction.commit();
         } catch (Exception e) {
