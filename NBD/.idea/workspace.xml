@@ -16,8 +16,6 @@
       <change beforePath="$PROJECT_DIR$/../.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Bicycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Bicycle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Car.java" afterDir="false" />
@@ -173,7 +171,7 @@
       <workItem from="1697718319175" duration="106000" />
       <workItem from="1697727028846" duration="501000" />
       <workItem from="1697815932706" duration="945000" />
-      <workItem from="1697816903452" duration="404000" />
+      <workItem from="1697816903452" duration="779000" />
     </task>
     <servers />
   </component>

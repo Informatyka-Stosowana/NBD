@@ -1,6 +1,10 @@
-package model;
+package storage;
 
 import jakarta.persistence.*;
+import model.Bicycle;
+import model.Car;
+import model.Motorcycle;
+import model.Vehicle;
 
 public class VehicleRepository {
     private EntityManagerFactory emf;

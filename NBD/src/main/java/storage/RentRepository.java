@@ -1,6 +1,9 @@
-package model;
+package storage;
 
 import jakarta.persistence.*;
+import model.Client;
+import model.Rent;
+import model.Vehicle;
 
 public class RentRepository {
 

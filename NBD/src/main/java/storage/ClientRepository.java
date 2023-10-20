@@ -1,8 +1,10 @@
-package model;
+package storage;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
+import model.Address;
+import model.Client;
 
 public class ClientRepository {
     private EntityManagerFactory emf;

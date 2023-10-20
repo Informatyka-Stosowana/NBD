@@ -4,6 +4,9 @@ import jakarta.persistence.Persistence;
 import model.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import storage.ClientRepository;
+import storage.RentRepository;
+import storage.VehicleRepository;
 
 public class DatabaseTest {
 
