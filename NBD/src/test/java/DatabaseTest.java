@@ -1,12 +1,10 @@
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
-import model.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import storage.ClientRepository;
-import storage.RentRepository;
-import storage.VehicleRepository;
+import model.*;
+import storage.*;
 
 public class DatabaseTest {
 
@@ -18,7 +16,7 @@ public class DatabaseTest {
 
         // Test if client in db
         cr.addClient(1, "Paweł", "Stos", "Uliczna", 12, "Sosnowiec", 12121);
-        Assertions.assertEquals(em.find(Client.class, 1).getPersonalId(), 1);
+        Assertions.assertNotNull(em.find(Client.class, 1));
 
         // Test same id
         cr.addClient(1, "Jacek", "Stos", "Uliczna", 12, "Sosnowiec", 12121);
@@ -54,12 +52,13 @@ public class DatabaseTest {
         vr.addCar(1, 2000, "red", 1000, 5);
         vr.addCar(2, 2000, "red", 1000, 5);
         vr.addCar(3, 2000, "red", 1000, 5);
-
         rr.addRent(1, 1, 1);
         rr.addRent(1, 2, 2);
 
         Assertions.assertFalse(rr.addRent(1, 3, 3));
         Assertions.assertNull(em.find(Rent.class, 3));
+        Assertions.assertFalse(vr.getVehicle(3).isRented());
+        Assertions.assertEquals(2, cr.getClient(1).getCurrentRents().size());
     }
 
     @Test
@@ -72,14 +71,14 @@ public class DatabaseTest {
 
         cr.addClient(1, "Paweł", "Stos", "Uliczna", 12, "Sosnowiec", 12121);
         vr.addCar(1, 2000, "red", 1000, 5);
-
         rr.addRent(1, 1, 1);
 
         Assertions.assertNotNull(rr.getRent(1));
 
         rr.endRent(rr.getRent(1));
 
+        Assertions.assertTrue(rr.getRent(1).isArchive());
         Assertions.assertFalse(rr.getRent(1).getVehicle().isRented());
-        Assertions.assertEquals(0, rr.getRent(1).getClient().getCurrentRents().size());
+        Assertions.assertEquals(0, cr.getClient(1).getCurrentRents().size());
     }
 }
