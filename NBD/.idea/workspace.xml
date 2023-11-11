@@ -74,7 +74,7 @@
       <recent name="C:\Users\habso\Documents\Pl\NBD\NBD\NBD\src\main\resources\META-INF" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="NBD" />
