@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21255cd7-98e6-4e4e-abc1-d513566396e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/storage/AbstractMongoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50402a81-22be-421d-8326-5e42e460026d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/50402a81-22be-421d-8326-5e42e460026d.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NBD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/NBD.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dockerfiles/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/docker-compose.yml" afterDir="false" />
@@ -30,9 +31,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Motorcycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Motorcycle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Rent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Rent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/ClientRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/RentRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/VehicleRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/AbstractMongoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/AbstractMongoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <list id="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" name="Changes by domin" comment="" />
@@ -182,7 +181,7 @@
       <workItem from="1697727028846" duration="501000" />
       <workItem from="1697815932706" duration="945000" />
       <workItem from="1697816903452" duration="779000" />
-      <workItem from="1699814381264" duration="3750000" />
+      <workItem from="1699814381264" duration="6327000" />
     </task>
     <servers />
   </component>
