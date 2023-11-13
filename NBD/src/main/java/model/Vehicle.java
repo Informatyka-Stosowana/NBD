@@ -1,22 +1,23 @@
 package model;
 
+import org.bson.codecs.pojo.annotations.BsonCreator;
 import org.bson.codecs.pojo.annotations.BsonDiscriminator;
 import org.bson.codecs.pojo.annotations.BsonProperty;
 
-@BsonDiscriminator(key = "_clazz")
-public abstract class Vehicle {
+@BsonDiscriminator(key = "_clazz", value = "vehicle")
+abstract public class Vehicle {
     @BsonProperty("_id")
-    private final String id;
+    private String id;
     @BsonProperty("weight")
-    private final int weight;
+    private int weight;
     @BsonProperty("color")
-    private final String color;
+    private String color;
     @BsonProperty("price")
-    private final double price;
+    private double price;
     @BsonProperty("rented")
-    private final int rented;
+    private int rented;
 
-
+    @BsonCreator
     public Vehicle(@BsonProperty("_id") String id,
                    @BsonProperty("weight") int weight,
                    @BsonProperty("color") String color,

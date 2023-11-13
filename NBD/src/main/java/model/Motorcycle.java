@@ -1,13 +1,15 @@
 package model;
 
+import org.bson.codecs.pojo.annotations.BsonCreator;
 import org.bson.codecs.pojo.annotations.BsonDiscriminator;
 import org.bson.codecs.pojo.annotations.BsonProperty;
 
 @BsonDiscriminator(key = "_clazz", value = "motorcycle")
 public class Motorcycle extends Vehicle {
     @BsonProperty("engineDisplacement")
-    private final int engineDisplacement;
+    private int engineDisplacement;
 
+    @BsonCreator
     public Motorcycle(@BsonProperty("_id") String id,
                       @BsonProperty("weight") int weight,
                       @BsonProperty("color") String color,

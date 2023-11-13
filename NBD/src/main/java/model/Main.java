@@ -1,16 +1,21 @@
 package model;
 
-import com.mongodb.MongoClient;
-
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Hello World!");
-        //Creating a MongoDB client
-        @SuppressWarnings("resource")
-        MongoClient mongo = new MongoClient( "localhost" , 27017 );
-        //Accessing the database
-        mongo.getDatabase("admin");
-        System.out.println("Databases created successfully");
+//        ClientAddress clientAddress = new ClientAddress(1, "Paweł", "Stus", "Uliczna", 1, "Łódź", 121212);
+//        ClientAddress clientAddress2 = new ClientAddress(2, "Paweł", "Stuz", "Uliczna", 1, "Łódź", 121212);
+//
+//        ClientRepository clientRepository = new ClientRepository();
+////        clientRepository.addClient(clientAddress);
+////        clientRepository.addClient(clientAddress2);
+//
+//        System.out.println(clientRepository.getClient(1).getFirstName());
+//
+//        System.out.println(clientRepository.getClient(2).getFirstName());
+//
+//        clientRepository.removeClient(1);
+
+
     }
 }

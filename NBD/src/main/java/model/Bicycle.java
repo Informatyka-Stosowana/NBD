@@ -7,7 +7,7 @@ import org.bson.codecs.pojo.annotations.BsonProperty;
 @BsonDiscriminator(key = "_clazz", value = "bicycle")
 public class Bicycle extends Vehicle {
     @BsonProperty("helperwheels")
-    private final boolean helperWheels;
+    private boolean helperWheels;
 
     @BsonCreator
     public Bicycle(@BsonProperty("_id") String id,
