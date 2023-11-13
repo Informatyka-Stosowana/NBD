@@ -1,14 +1,23 @@
 package model;
 
-public class Car extends Vehicle {
-    private int numberOfSeats;
+import org.bson.codecs.pojo.annotations.BsonDiscriminator;
+import org.bson.codecs.pojo.annotations.BsonProperty;
 
-    public Car(int id, int weight, String color, double price, int numberOfSeats) {
-        super(id, weight, color, price);
+@BsonDiscriminator(key = "_clazz", value = "car")
+
+public class Car extends Vehicle {
+    @BsonProperty("numberOfSeats")
+    private final int numberOfSeats;
+
+    public Car(@BsonProperty("_id") String id,
+               @BsonProperty("weight") int weight,
+               @BsonProperty("color") String color,
+               @BsonProperty("price") double price,
+               @BsonProperty("rented") int rented,
+               @BsonProperty("numberOfSeats") int numberOfSeats) {
+        super(id, weight, color, price, rented);
         this.numberOfSeats = numberOfSeats;
     }
-
-    public Car() {}
 
     public int getNumberOfSeats() {
         return numberOfSeats;

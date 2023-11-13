@@ -1,28 +1,39 @@
 package model;
 
+import org.bson.codecs.pojo.annotations.BsonDiscriminator;
+import org.bson.codecs.pojo.annotations.BsonProperty;
+
+@BsonDiscriminator(key = "_clazz")
 public abstract class Vehicle {
-    private int id;
-    private int weight;
-    private String color;
-    private double price;
-    private boolean isRented;
+    @BsonProperty("_id")
+    private final String id;
+    @BsonProperty("weight")
+    private final int weight;
+    @BsonProperty("color")
+    private final String color;
+    @BsonProperty("price")
+    private final double price;
+    @BsonProperty("rented")
+    private final int rented;
 
 
-    public Vehicle(int id, int weight, String color, double price) {
+    public Vehicle(@BsonProperty("_id") String id,
+                   @BsonProperty("weight") int weight,
+                   @BsonProperty("color") String color,
+                   @BsonProperty("price") double price,
+                   @BsonProperty("rented") int rented) {
         this.id = id;
         this.weight = weight;
         this.color = color;
         this.price = price;
-        this.isRented = false;
+        this.rented = rented;
     }
-
-    public Vehicle() {}
 
     public double getPrice() {
         return price;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
@@ -34,11 +45,7 @@ public abstract class Vehicle {
         return color;
     }
 
-    public boolean isRented() {
-        return isRented;
-    }
-
-    public void setRented(boolean rented) {
-        isRented = rented;
+    public int isRented() {
+        return rented;
     }
 }

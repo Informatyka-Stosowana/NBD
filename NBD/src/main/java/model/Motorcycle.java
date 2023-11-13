@@ -1,14 +1,22 @@
 package model;
 
-public class Motorcycle extends Vehicle {
-    private int engineDisplacement;
+import org.bson.codecs.pojo.annotations.BsonDiscriminator;
+import org.bson.codecs.pojo.annotations.BsonProperty;
 
-    public Motorcycle(int id, int weight, String color, double price, int engineDisplacement) {
-        super(id, weight, color, price);
+@BsonDiscriminator(key = "_clazz", value = "motorcycle")
+public class Motorcycle extends Vehicle {
+    @BsonProperty("engineDisplacement")
+    private final int engineDisplacement;
+
+    public Motorcycle(@BsonProperty("_id") String id,
+                      @BsonProperty("weight") int weight,
+                      @BsonProperty("color") String color,
+                      @BsonProperty("price") double price,
+                      @BsonProperty("engineDisplacement") int engineDisplacement,
+                      @BsonProperty("rented") int rented) {
+        super(id, weight, color, price, rented);
         this.engineDisplacement = engineDisplacement;
     }
-
-    public Motorcycle() {}
 
     public int getEngineDisplacement() {
         return engineDisplacement;
