@@ -28,7 +28,6 @@ public class MongoDBTest {
 
     @Test
     public void modifyClientTest() {
-
         ClientAddress clientAddress = new ClientAddress(1, "Pablo", "Escobar", "Uliczna", 1, "Mehiko", 121212);
 
         ClientRepository clientRepository = new ClientRepository();

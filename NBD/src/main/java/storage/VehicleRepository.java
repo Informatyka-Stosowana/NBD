@@ -5,7 +5,6 @@ import com.mongodb.client.model.CreateCollectionOptions;
 import com.mongodb.client.model.Filters;
 import com.mongodb.client.model.Updates;
 import com.mongodb.client.model.ValidationOptions;
-import com.mongodb.client.result.UpdateResult;
 import model.Vehicle;
 import org.bson.Document;
 import org.bson.conversions.Bson;
@@ -82,8 +81,7 @@ public class VehicleRepository extends AbstractMongoRepository {
 
         if (status) {
             Bson update = Updates.inc("rented", 1);
-            UpdateResult chuj = vehiclesCollection.updateOne(filter, update);
-            System.out.println();
+            vehiclesCollection.updateOne(filter, update);
         } else {
             Bson update = Updates.set("rented", 0);
             vehiclesCollection.updateOne(filter, update);
