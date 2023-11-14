@@ -1,34 +1,30 @@
 package model;
 
-import ch.qos.logback.core.net.server.Client;
-
 public class Rent {
-    private int id;
-    private double price;
+    private final ClientAddress client;
+    private final Vehicle vehicle;
+    private final int id;
     private boolean archive;
-    private Client client;
-    private Vehicle vehicle;
 
-    public Rent(int id, Client client, Vehicle vehicle) {
+    public Rent(int id, ClientAddress client, Vehicle vehicle) {
         this.id = id;
-        this.price = vehicle.getPrice();
         this.archive = false;
         this.client = client;
         this.vehicle = vehicle;
     }
 
-    public Rent() {
+    public Rent(ClientAddress client, Vehicle vehicle, int id, boolean archive) {
+        this.client = client;
+        this.vehicle = vehicle;
+        this.id = id;
+        this.archive = archive;
     }
 
     public int getId() {
         return id;
     }
 
-    public double getPrice() {
-        return price;
-    }
-
-    public Client getClient() {
+    public ClientAddress getClient() {
         return client;
     }
 

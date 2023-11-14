@@ -27,14 +27,16 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Motorcycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Motorcycle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Rent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Rent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Vehicle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/AbstractMongoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/AbstractMongoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/ClientRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/RentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/RentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/VehicleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/VehicleRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/java/MongoDBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/MongoDBTest.java" afterDir="false" />
     </list>
-    <list id="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" name="Changes by domin" comment="" />
+    <list id="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" name="Changes by domin" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/VehicleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/VehicleRepository.java" afterDir="false" />
+    </list>
     <list id="e9d55649-76b6-4ff2-9f02-f7625282c2d4" name="Changes by habso" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +61,16 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/storage/VehicleRepository.java">
+      <ranges>
+        <range start1="7" end1="7" start2="7" end2="8" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
+        <range start1="42" end1="43" start2="43" end2="44" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
+        <range start1="45" end1="46" start2="46" end2="46" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
+        <range start1="76" end1="76" start2="76" end2="91" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -105,7 +117,7 @@
       <recent name="C:\Users\habso\Documents\Pl\NBD\NBD\NBD\src\main\resources\META-INF" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MongoDBTest.vehicleSchemaTest">
+  <component name="RunManager" selected="JUnit.MongoDBTest">
     <configuration name="MongoDBTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NBD" />
       <option name="PACKAGE_NAME" value="" />
@@ -115,11 +127,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MongoDBTest.AddRemoveClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MongoDBTest.addRemoveRentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NBD" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MongoDBTest" />
-      <option name="METHOD_NAME" value="AddRemoveClientTest" />
+      <option name="METHOD_NAME" value="addRemoveRentTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -130,6 +142,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MongoDBTest" />
       <option name="METHOD_NAME" value="modifyClientTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MongoDBTest.rentVehicleTwiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NBD" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MongoDBTest" />
+      <option name="METHOD_NAME" value="rentVehicleTwiceTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,21 +173,13 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="dockerfiles: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="dockerfiles/docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MongoDBTest.vehicleSchemaTest" />
         <item itemvalue="JUnit.MongoDBTest" />
+        <item itemvalue="JUnit.MongoDBTest.rentVehicleTwiceTest" />
+        <item itemvalue="JUnit.MongoDBTest.addRemoveRentTest" />
+        <item itemvalue="JUnit.MongoDBTest.vehicleSchemaTest" />
         <item itemvalue="JUnit.MongoDBTest.modifyClientTest" />
-        <item itemvalue="JUnit.MongoDBTest.AddRemoveClientTest" />
-        <item itemvalue="Docker.dockerfiles: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +211,7 @@
       <workItem from="1699868457363" duration="490000" />
       <workItem from="1699869084422" duration="927000" />
       <workItem from="1699893179169" duration="3031000" />
-      <workItem from="1699974706215" duration="6127000" />
+      <workItem from="1699974706215" duration="13695000" />
     </task>
     <servers />
   </component>

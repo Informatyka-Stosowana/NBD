@@ -1,10 +1,12 @@
 import com.mongodb.MongoWriteException;
 import model.Car;
 import model.ClientAddress;
+import model.Rent;
 import model.Vehicle;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import storage.ClientRepository;
+import storage.RentRepository;
 import storage.VehicleRepository;
 
 public class MongoDBTest {
@@ -46,11 +48,11 @@ public class MongoDBTest {
 
         VehicleRepository vehicleRepository = new VehicleRepository();
         vehicleRepository.addVehicle(vehicle);
-        Assertions.assertNotNull(vehicleRepository.getVehicle("1", "car"));
+        Assertions.assertNotNull(vehicleRepository.getVehicle("1"));
 
         vehicleRepository.removeVehicle("1");
 
-        Assertions.assertNull(vehicleRepository.getVehicle("1", "car"));
+        Assertions.assertNull(vehicleRepository.getVehicle("1"));
 
         vehicleRepository.getMongoDatabase().drop();
     }
@@ -61,11 +63,11 @@ public class MongoDBTest {
 
         VehicleRepository vehicleRepository = new VehicleRepository();
         vehicleRepository.addVehicle(car);
-        Assertions.assertEquals(vehicleRepository.getVehicle("1", "car").getColor(), "black");
+        Assertions.assertEquals(vehicleRepository.getVehicle("1").getColor(), "black");
 
         vehicleRepository.updateVehicle("1", "color", "red");
 
-        Assertions.assertEquals(vehicleRepository.getVehicle("1", "car").getColor(), "red");
+        Assertions.assertEquals(vehicleRepository.getVehicle("1").getColor(), "red");
         vehicleRepository.getMongoDatabase().drop();
     }
 
@@ -86,5 +88,114 @@ public class MongoDBTest {
         });
 
         vehicleRepository.getMongoDatabase().drop();
+    }
+
+    @Test
+    public void addRemoveRentTest() {
+        ClientRepository clientRepository = new ClientRepository();
+        VehicleRepository vehicleRepository = new VehicleRepository();
+        RentRepository rentRepository = new RentRepository(clientRepository, vehicleRepository);
+
+        ClientAddress clientAddress = new ClientAddress(1, "Pablo", "Escobar", "Uliczna", 1, "Mehiko", 121212);
+        Vehicle vehicle = new Car("1", 100, "Pink", 0.0000001, 0, 15);
+        Rent rent = new Rent(3, clientAddress, vehicle);
+
+        clientRepository.addClient(clientAddress);
+        vehicleRepository.addVehicle(vehicle);
+        rentRepository.addRent(rent);
+
+        Rent retrivedRent = rentRepository.getRent(3);
+
+        Assertions.assertEquals(rent.getId(), retrivedRent.getId());
+        Assertions.assertEquals(retrivedRent.getClient().getFirstName(), clientAddress.getFirstName());
+        Assertions.assertEquals(retrivedRent.getVehicle().getId(), vehicle.getId());
+
+        clientRepository.getMongoDatabase().drop();
+        vehicleRepository.getMongoDatabase().drop();
+        rentRepository.getMongoDatabase().drop();
+    }
+
+    @Test
+    public void modifyRentTest() {
+        ClientRepository clientRepository = new ClientRepository();
+        VehicleRepository vehicleRepository = new VehicleRepository();
+        RentRepository rentRepository = new RentRepository(clientRepository, vehicleRepository);
+
+        ClientAddress clientAddress = new ClientAddress(1, "Pablo", "Escobar", "Uliczna", 1, "Mehiko", 121212);
+        Vehicle vehicle = new Car("1", 100, "Pink", 0.0000001, 0, 15);
+        Rent rent = new Rent(1, clientAddress, vehicle);
+
+        clientRepository.addClient(clientAddress);
+        vehicleRepository.addVehicle(vehicle);
+        rentRepository.addRent(rent);
+
+        Rent retrivedRent = rentRepository.getRent(1);
+
+        Assertions.assertEquals(rent.getId(), retrivedRent.getId());
+        Assertions.assertEquals(retrivedRent.getClient().getFirstName(), clientAddress.getFirstName());
+        Assertions.assertEquals(retrivedRent.getVehicle().getId(), vehicle.getId());
+
+        rentRepository.endRent(1);
+
+        Rent modifiedRetrivedRent = rentRepository.getRent(1);
+        Assertions.assertTrue(modifiedRetrivedRent.isArchive());
+
+        clientRepository.getMongoDatabase().drop();
+        vehicleRepository.getMongoDatabase().drop();
+        rentRepository.getMongoDatabase().drop();
+    }
+
+    @Test
+    public void rentVehicleTwiceTest() {
+        ClientRepository clientRepository = new ClientRepository();
+        VehicleRepository vehicleRepository = new VehicleRepository();
+        RentRepository rentRepository = new RentRepository(clientRepository, vehicleRepository);
+
+        ClientAddress clientAddress1 = new ClientAddress(1, "Pablo", "Escobar", "Uliczna", 1, "Mehiko", 121212);
+        ClientAddress clientAddress2 = new ClientAddress(2, "Pablo", "Escobar", "Uliczna", 1, "Mehiko", 121212);
+        Vehicle vehicle = new Car("1", 100, "Pink", 0.0000001, 0, 15);
+
+        Rent rent1 = new Rent(1, clientAddress1, vehicle);
+        Rent rent2 = new Rent(2, clientAddress2, vehicle);
+
+        clientRepository.addClient(clientAddress2);
+        vehicleRepository.addVehicle(vehicle);
+        rentRepository.addRent(rent1);
+        rentRepository.addRent(rent2);
+
+        Assertions.assertNull(rentRepository.getRent(2));
+
+        clientRepository.getMongoDatabase().drop();
+        vehicleRepository.getMongoDatabase().drop();
+        rentRepository.getMongoDatabase().drop();
+    }
+
+
+    @Test
+    public void maxNoOfVehicleRentTest() {
+        ClientRepository clientRepository = new ClientRepository();
+        VehicleRepository vehicleRepository = new VehicleRepository();
+        RentRepository rentRepository = new RentRepository(clientRepository, vehicleRepository);
+
+        ClientAddress clientAddress = new ClientAddress(1, "Pablo", "Escobar", "Uliczna", 1, "Mehiko", 121212);
+        Vehicle vehicle = new Car("1", 100, "Pink", 0.0000001, 0, 15);
+        Vehicle vehicle2 = new Car("2", 100, "Pink", 0.0000001, 0, 15);
+        Vehicle vehicle3 = new Car("3", 100, "Pink", 0.0000001, 0, 15);
+
+        Rent rent1 = new Rent(1, clientAddress, vehicle);
+        Rent rent2 = new Rent(2, clientAddress, vehicle2);
+        Rent rent3 = new Rent(2, clientAddress, vehicle3);
+
+        rentRepository.addRent(rent1);
+        rentRepository.addRent(rent2);
+        rentRepository.addRent(rent3);
+
+        Assertions.assertNotNull(rentRepository.getRent(1));
+        Assertions.assertNotNull(rentRepository.getRent(2));
+        Assertions.assertNull(rentRepository.getRent(3));
+
+        clientRepository.getMongoDatabase().drop();
+        vehicleRepository.getMongoDatabase().drop();
+        rentRepository.getMongoDatabase().drop();
     }
 }

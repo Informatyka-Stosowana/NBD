@@ -13,8 +13,5 @@
     <schema id="4" parent="1" name="local">
       <LocalIntrospectionTimestamp>2023-11-13.18:18:58</LocalIntrospectionTimestamp>
     </schema>
-    <schema id="5" parent="1" name="rentDB">
-      <LocalIntrospectionTimestamp>2023-11-14.17:25:35</LocalIntrospectionTimestamp>
-    </schema>
   </database-model>
 </dataSource>
