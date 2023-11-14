@@ -1,9 +1,12 @@
 package storage;
 
 import com.mongodb.client.MongoCollection;
+import com.mongodb.client.model.CreateCollectionOptions;
 import com.mongodb.client.model.Filters;
 import com.mongodb.client.model.Updates;
+import com.mongodb.client.model.ValidationOptions;
 import model.Vehicle;
+import org.bson.Document;
 import org.bson.conversions.Bson;
 
 import java.util.ArrayList;
@@ -12,6 +15,29 @@ public class VehicleRepository extends AbstractMongoRepository {
 
     public VehicleRepository() {
         initDbConnection();
+        if (!getMongoDatabase().listCollectionNames().into(new ArrayList()).contains("vehicles")) initCollection();
+    }
+
+    public void initCollection() {
+        ValidationOptions validationOptions = new ValidationOptions().validator(
+                Document.parse("""
+                        {
+                            $jsonSchema:{
+                                "bsonType": "object",
+                                "properties": {
+                                    "rented": {
+                                        "bsonType": "int",
+                                        "minimum" : 0,
+                                        "maximum" : 1
+                                        "description": "must be 1 for rented and 0 for available"
+                                    }
+                                }
+                            }
+                        }
+                        """));
+        CreateCollectionOptions createCollectionOptions =
+                new CreateCollectionOptions().validationOptions(validationOptions);
+        getMongoDatabase().createCollection("vehicles", createCollectionOptions);
     }
 
     public Vehicle getVehicle(String id, String vehicleType) {

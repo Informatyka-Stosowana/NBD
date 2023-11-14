@@ -14,8 +14,36 @@
       <LocalIntrospectionTimestamp>2023-11-13.18:18:58</LocalIntrospectionTimestamp>
     </schema>
     <schema id="5" parent="1" name="rentDB">
-      <LocalIntrospectionTimestamp>2023-11-13.20:17:21</LocalIntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-11-14.17:25:29</LocalIntrospectionTimestamp>
     </schema>
     <table id="6" parent="5" name="vehicles"/>
+    <column id="7" parent="6" name="_id">
+      <DasType>String|12s</DasType>
+      <Position>1</Position>
+    </column>
+    <column id="8" parent="6" name="_clazz">
+      <DasType>String|12s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="9" parent="6" name="color">
+      <DasType>String|12s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="10" parent="6" name="numberOfSeats">
+      <DasType>Int32|4s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="11" parent="6" name="price">
+      <DasType>Double|8s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="12" parent="6" name="rented">
+      <DasType>Int32|4s</DasType>
+      <Position>6</Position>
+    </column>
+    <column id="13" parent="6" name="weight">
+      <DasType>Int32|4s</DasType>
+      <Position>7</Position>
+    </column>
   </database-model>
 </dataSource>

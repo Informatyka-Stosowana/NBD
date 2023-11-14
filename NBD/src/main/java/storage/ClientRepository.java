@@ -12,6 +12,14 @@ public class ClientRepository extends AbstractMongoRepository {
 
     public ClientRepository() {
         initDbConnection();
+
+        // if collection does not exist, create one with correct schema
+//        if (!getMongoDatabase().listCollectionNames().into(new ArrayList()).contains("clients")) {
+//            ValidationOptions validationOptions = new ValidationOptions().validator();
+//            CreateCollectionOptions createCollectionOptions =
+//                    new CreateCollectionOptions().validationOptions(validationOptions);
+//            getMongoDatabase().createCollection("clients", createCollectionOptions);
+//        }
     }
 
     public ClientAddress getClient(int personalId) {
