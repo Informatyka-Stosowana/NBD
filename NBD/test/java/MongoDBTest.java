@@ -177,7 +177,6 @@ public class MongoDBTest {
         Assertions.assertNull(rentRepository.getRent(1));
 
         // Remove rent first
-
         rentRepository.addRent(rent1);
 
         Assertions.assertNotNull(rentRepository.getRent(1));

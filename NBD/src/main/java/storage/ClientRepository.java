@@ -5,7 +5,6 @@ import com.mongodb.client.model.CreateCollectionOptions;
 import com.mongodb.client.model.Filters;
 import com.mongodb.client.model.Updates;
 import com.mongodb.client.model.ValidationOptions;
-import com.mongodb.client.result.UpdateResult;
 import model.ClientAddress;
 import org.bson.Document;
 import org.bson.conversions.Bson;
@@ -80,8 +79,7 @@ public class ClientRepository extends AbstractMongoRepository {
         Bson update;
         if (add) update = Updates.inc("noRents", 1);
         else update = Updates.inc("noRents", -1);
-        UpdateResult d = clientCollection.updateOne(filter, update);
-        System.out.println();
+        clientCollection.updateOne(filter, update);
     }
 
     @Override
