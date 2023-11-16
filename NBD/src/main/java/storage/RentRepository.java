@@ -57,8 +57,6 @@ public class RentRepository extends AbstractMongoRepository {
         } finally {
             clientSession.close();
         }
-
-
     }
 
     public void endRent(int id) {
@@ -68,9 +66,13 @@ public class RentRepository extends AbstractMongoRepository {
         Bson filter = Filters.eq("_id", id);
         Bson setUpdate = Updates.set("archive", true);
         rentCollection.updateOne(filter, setUpdate);
+        vehicleRepository.setRented(getRent(id).getVehicle().getId(), false);
+        clientRepository.addRemoveRent(getRent(id).getClient().getPersonalId(), false);
     }
 
-    public void removeRent(String id) {
+    public void removeRent(int id) {
+        if (!getRent(id).isArchive()) endRent(id);
+
         MongoCollection<Document> rentCollection = getMongoDatabase().getCollection("rents");
 
         Bson filter = Filters.eq("_id", id);

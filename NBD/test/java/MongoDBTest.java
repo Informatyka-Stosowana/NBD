@@ -145,6 +145,58 @@ public class MongoDBTest {
     }
 
     @Test
+    public void addRemoveEndRentTest() {
+        ClientRepository clientRepository = new ClientRepository();
+        VehicleRepository vehicleRepository = new VehicleRepository();
+        RentRepository rentRepository = new RentRepository(clientRepository, vehicleRepository);
+
+        ClientAddress clientAddress = new ClientAddress(1, "Pablo", "Escobar", "Uliczna", 1, "Mehiko", 121212);
+        Vehicle vehicle = new Car("1", 100, "Pink", 0.0000001, 0, 15);
+        Rent rent1 = new Rent(1, clientAddress, vehicle);
+
+        clientRepository.addClient(clientAddress);
+        vehicleRepository.addVehicle(vehicle);
+        rentRepository.addRent(rent1);
+
+        Assertions.assertNotNull(rentRepository.getRent(1));
+        Assertions.assertFalse(rentRepository.getRent(1).isArchive());
+        Assertions.assertEquals(1, vehicleRepository.getVehicle("1").isRented());
+        Assertions.assertEquals(1, clientRepository.getClient(1).getNoRents());
+
+
+        // End rent first
+        rentRepository.endRent(1);
+
+        Assertions.assertNotNull(rentRepository.getRent(1));
+        Assertions.assertTrue(rentRepository.getRent(1).isArchive());
+        Assertions.assertEquals(0, vehicleRepository.getVehicle("1").isRented());
+        Assertions.assertEquals(0, clientRepository.getClient(1).getNoRents());
+
+        rentRepository.removeRent(1);
+
+        Assertions.assertNull(rentRepository.getRent(1));
+
+        // Remove rent first
+
+        rentRepository.addRent(rent1);
+
+        Assertions.assertNotNull(rentRepository.getRent(1));
+        Assertions.assertFalse(rentRepository.getRent(1).isArchive());
+        Assertions.assertEquals(1, vehicleRepository.getVehicle("1").isRented());
+        Assertions.assertEquals(1, clientRepository.getClient(1).getNoRents());
+
+        rentRepository.removeRent(1);
+
+        Assertions.assertNull(rentRepository.getRent(1));
+        Assertions.assertEquals(0, vehicleRepository.getVehicle("1").isRented());
+        Assertions.assertEquals(0, clientRepository.getClient(1).getNoRents());
+
+        clientRepository.getMongoDatabase().drop();
+        vehicleRepository.getMongoDatabase().drop();
+        rentRepository.getMongoDatabase().drop();
+    }
+
+    @Test
     public void rentVehicleTwiceTest() {
         ClientRepository clientRepository = new ClientRepository();
         VehicleRepository vehicleRepository = new VehicleRepository();

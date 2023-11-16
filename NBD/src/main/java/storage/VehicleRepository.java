@@ -79,13 +79,13 @@ public class VehicleRepository extends AbstractMongoRepository {
                 getMongoDatabase().getCollection("vehicles", Vehicle.class);
         Bson filter = Filters.eq("_id", vehicleId);
 
+        Bson update;
         if (status) {
-            Bson update = Updates.inc("rented", 1);
-            vehiclesCollection.updateOne(filter, update);
+            update = Updates.inc("rented", 1);
         } else {
-            Bson update = Updates.set("rented", 0);
-            vehiclesCollection.updateOne(filter, update);
+            update = Updates.set("rented", 0);
         }
+        vehiclesCollection.updateOne(filter, update);
     }
 
     @Override

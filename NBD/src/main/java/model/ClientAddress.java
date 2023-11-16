@@ -25,10 +25,28 @@ public class ClientAddress {
     public ClientAddress(@BsonProperty("_id") int personalId,
                          @BsonProperty("firstName") String firstName,
                          @BsonProperty("lastname") String lastName,
+                         @BsonProperty("noRents") int noRents,
                          @BsonProperty("street") String street,
                          @BsonProperty("streetNumber") int streetNumber,
                          @BsonProperty("city") String city,
                          @BsonProperty("postcode") int postcode) {
+        this.personalId = personalId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.noRents = noRents;
+        this.street = street;
+        this.streetNumber = streetNumber;
+        this.city = city;
+        this.postcode = postcode;
+    }
+
+    public ClientAddress(int personalId,
+                         String firstName,
+                         String lastName,
+                         String street,
+                         int streetNumber,
+                         String city,
+                         int postcode) {
         this.personalId = personalId;
         this.firstName = firstName;
         this.lastName = lastName;
