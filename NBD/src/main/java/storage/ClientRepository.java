@@ -72,16 +72,6 @@ public class ClientRepository extends AbstractMongoRepository {
         clientsCollection.findOneAndDelete(filter);
     }
 
-    public void addRemoveRent(int id, boolean add) {
-        MongoCollection<ClientAddress> clientCollection =
-                getMongoDatabase().getCollection("clients", ClientAddress.class);
-        Bson filter = Filters.eq("_id", id);
-        Bson update;
-        if (add) update = Updates.inc("noRents", 1);
-        else update = Updates.inc("noRents", -1);
-        clientCollection.updateOne(filter, update);
-    }
-
     @Override
     public void close() throws Exception {
 

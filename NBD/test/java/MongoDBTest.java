@@ -234,7 +234,12 @@ public class MongoDBTest {
 
         Rent rent1 = new Rent(1, clientAddress, vehicle);
         Rent rent2 = new Rent(2, clientAddress, vehicle2);
-        Rent rent3 = new Rent(2, clientAddress, vehicle3);
+        Rent rent3 = new Rent(3, clientAddress, vehicle3);
+
+        clientRepository.addClient(clientAddress);
+        vehicleRepository.addVehicle(vehicle);
+        vehicleRepository.addVehicle(vehicle2);
+        vehicleRepository.addVehicle(vehicle3);
 
         rentRepository.addRent(rent1);
         rentRepository.addRent(rent2);

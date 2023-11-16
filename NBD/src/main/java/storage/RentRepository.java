@@ -47,8 +47,20 @@ public class RentRepository extends AbstractMongoRepository {
         try {
             clientSession.startTransaction();
 
-            this.vehicleRepository.setRented(rent.getVehicle().getId(), true);
-            this.clientRepository.addRemoveRent(rent.getClient().getPersonalId(), true);
+            // Vehicle
+            MongoCollection<Vehicle> vehiclesCollection =
+                    getMongoDatabase().getCollection("vehicles", Vehicle.class);
+            Bson vehicleFilter = Filters.eq("_id", rent.getVehicle().getId());
+            Bson vehicleUpdate = Updates.inc("rented", 1);
+            vehiclesCollection.updateOne(vehicleFilter, vehicleUpdate);
+
+            // Client
+            MongoCollection<ClientAddress> clientCollection =
+                    getMongoDatabase().getCollection("clients", ClientAddress.class);
+            Bson clientFilter = Filters.eq("_id", rent.getClient().getPersonalId());
+            Bson clientUpdate = Updates.inc("noRents", 1);
+            clientCollection.updateOne(clientFilter, clientUpdate);
+
             rentCollection.insertOne(toMongoDocument(rent));
 
             clientSession.commitTransaction();
@@ -66,8 +78,20 @@ public class RentRepository extends AbstractMongoRepository {
         Bson filter = Filters.eq("_id", id);
         Bson setUpdate = Updates.set("archive", true);
         rentCollection.updateOne(filter, setUpdate);
-        vehicleRepository.setRented(getRent(id).getVehicle().getId(), false);
-        clientRepository.addRemoveRent(getRent(id).getClient().getPersonalId(), false);
+
+        // Vehicle
+        MongoCollection<Vehicle> vehiclesCollection =
+                getMongoDatabase().getCollection("vehicles", Vehicle.class);
+        Bson vehicleFilter = Filters.eq("_id", getRent(id).getVehicle().getId());
+        Bson vehicleUpdate = Updates.set("rented", 0);
+        vehiclesCollection.updateOne(vehicleFilter, vehicleUpdate);
+
+        // Client
+        MongoCollection<ClientAddress> clientCollection =
+                getMongoDatabase().getCollection("clients", ClientAddress.class);
+        Bson clientFilter = Filters.eq("_id", getRent(id).getClient().getPersonalId());
+        Bson clientUpdate = Updates.inc("noRents", -1);
+        clientCollection.updateOne(clientFilter, clientUpdate);
     }
 
     public void removeRent(int id) {

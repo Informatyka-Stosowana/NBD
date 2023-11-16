@@ -75,17 +75,7 @@ public class VehicleRepository extends AbstractMongoRepository {
     }
 
     public void setRented(String vehicleId, boolean status) {
-        MongoCollection<Vehicle> vehiclesCollection =
-                getMongoDatabase().getCollection("vehicles", Vehicle.class);
-        Bson filter = Filters.eq("_id", vehicleId);
 
-        Bson update;
-        if (status) {
-            update = Updates.inc("rented", 1);
-        } else {
-            update = Updates.set("rented", 0);
-        }
-        vehiclesCollection.updateOne(filter, update);
     }
 
     @Override
