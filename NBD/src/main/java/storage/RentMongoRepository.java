@@ -12,14 +12,14 @@ import org.bson.conversions.Bson;
 
 import java.util.ArrayList;
 
-public class RentRepository extends AbstractMongoRepository {
+public class RentMongoRepository extends AbstractMongoRepository {
 
-    private final ClientRepository clientRepository;
-    private final VehicleRepository vehicleRepository;
+    private final ClientMongoRepository clientMongoRepository;
+    private final VehicleMongoRepository vehicleMongoRepository;
 
-    public RentRepository(ClientRepository clientRepository, VehicleRepository vehicleRepository) {
-        this.clientRepository = clientRepository;
-        this.vehicleRepository = vehicleRepository;
+    public RentMongoRepository(ClientMongoRepository clientMongoRepository, VehicleMongoRepository vehicleMongoRepository) {
+        this.clientMongoRepository = clientMongoRepository;
+        this.vehicleMongoRepository = vehicleMongoRepository;
 
         initDbConnection();
         if (!getMongoDatabase().listCollectionNames().into(new ArrayList()).contains("rents")) {
@@ -113,8 +113,8 @@ public class RentRepository extends AbstractMongoRepository {
     }
 
     private Rent fromMongoDocument(Document document) {
-        ClientAddress client = clientRepository.getClient((int) document.get("clientid"));
-        Vehicle vehicle = vehicleRepository.getVehicle(document.get("vehicleid").toString());
+        ClientAddress client = clientMongoRepository.getClient((int) document.get("clientid"));
+        Vehicle vehicle = vehicleMongoRepository.getVehicle(document.get("vehicleid").toString());
 
         return new Rent(client, vehicle, (int) document.get("_id"), (boolean) document.get("archive"));
     }

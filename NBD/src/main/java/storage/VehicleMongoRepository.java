@@ -11,9 +11,9 @@ import org.bson.conversions.Bson;
 
 import java.util.ArrayList;
 
-public class VehicleRepository extends AbstractMongoRepository {
+public class VehicleMongoRepository extends AbstractMongoRepository {
 
-    public VehicleRepository() {
+    public VehicleMongoRepository() {
         initDbConnection();
         if (!getMongoDatabase().listCollectionNames().into(new ArrayList()).contains("vehicles")) initCollection();
     }

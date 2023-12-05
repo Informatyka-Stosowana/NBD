@@ -11,9 +11,9 @@ import org.bson.conversions.Bson;
 
 import java.util.ArrayList;
 
-public class ClientRepository extends AbstractMongoRepository {
+public class ClientMongoRepository extends AbstractMongoRepository {
 
-    public ClientRepository() {
+    public ClientMongoRepository() {
         initDbConnection();
         if (!getMongoDatabase().listCollectionNames().into(new ArrayList()).contains("clients")) initCollection();
     }

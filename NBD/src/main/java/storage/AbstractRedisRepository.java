@@ -1,0 +1,55 @@
+package storage;
+
+import jakarta.json.bind.Jsonb;
+import jakarta.json.bind.JsonbBuilder;
+import org.ini4j.Ini;
+import org.ini4j.IniPreferences;
+import redis.clients.jedis.JedisPooled;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Set;
+import java.util.prefs.Preferences;
+
+public abstract class AbstractRedisRepository {
+
+    private static final Jsonb jsonb = JsonbBuilder.create();
+    private static JedisPooled pool;
+
+    public static Jsonb getJsonb() {
+        return jsonb;
+    }
+
+    public static JedisPooled getPool() {
+        return pool;
+    }
+
+    public void initDbConnection() {
+        try {
+            File file = new File("./src/resources/conf.ini");
+            Ini ini = new Ini(file);
+
+            Preferences preferences = new IniPreferences(ini);
+            pool = new JedisPooled(preferences.node("ConnectionString").get("ConnectionString", "ConnectionString"));
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public boolean checkConnection() {
+        return pool.getPool().getResource().isConnected();
+    }
+
+    public void clearCache() {
+        Set<String> keys = pool.keys("*");
+        for (String key : keys) {
+            pool.del(key);
+        }
+    }
+
+    public void close() throws Exception {
+        pool.getPool().destroy();
+        pool.close();
+    }
+}
