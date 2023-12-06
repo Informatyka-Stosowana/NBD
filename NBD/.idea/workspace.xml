@@ -5,42 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21255cd7-98e6-4e4e-abc1-d513566396e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dockerfiles/mongocustom/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dockerfiles/redis/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/redis/Bicycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/redis/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/redis/ClientAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/redis/Motorcycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/redis/Rent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/redis/Vehicle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/storage/AbstractRedisRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/storage/ClientManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/storage/ClientRedisRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/storage/RentManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/storage/RentRedisRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/storage/VehicleManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/storage/VehicleRedisRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/conf.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/java/RedisTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/50402a81-22be-421d-8326-5e42e460026d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/50402a81-22be-421d-8326-5e42e460026d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50402a81-22be-421d-8326-5e42e460026d/storage_v2/_src_/schema/rentDB.d3lLyA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/50402a81-22be-421d-8326-5e42e460026d/storage_v2/_src_/schema/rentDB.d3lLyA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NBD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/NBD.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dockerfiles/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dockerfiles/mongocustom/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/mongocustom/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerfiles/mongocustom/docker-compose.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dockerfiles/mongocustom/keyFile" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/mongocustom/keyFile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dockerfiles/mongocustom/mongod.conf" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/mongocustom/mongod.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerfiles/redis/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/redis/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Bicycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Bicycle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Car.java" afterDir="false" />
@@ -48,15 +31,28 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Motorcycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Motorcycle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Rent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Rent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/ClientMongoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/RentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/RentMongoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/VehicleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/VehicleMongoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/MongoDBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/MongoDBTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-    </list>
-    <list id="acb19ce2-05ca-4e97-9177-2e3304964a7a" name="Changes by chuj" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/redis/Bicycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/redis/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/redis/ClientAddress.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/redis/Motorcycle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/redis/Rent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/redis/Vehicle.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/AbstractMongoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/AbstractMongoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/AbstractRedisRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/AbstractRedisRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/ClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/ClientManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/ClientMongoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/ClientMongoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/ClientRedisRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/ClientRedisRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/RentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/RentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/RentMongoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/RentMongoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/RentRedisRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/RentRedisRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/VehicleManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/VehicleManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/VehicleMongoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/VehicleMongoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/VehicleRedisRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/VehicleRedisRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/conf.ini" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/conf.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/MongoDBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/MongoDBTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/RedisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/RedisTest.java" afterDir="false" />
     </list>
+    <list id="acb19ce2-05ca-4e97-9177-2e3304964a7a" name="Changes by chuj" comment="" />
     <list id="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" name="Changes by domin" comment="" />
     <list id="e9d55649-76b6-4ff2-9f02-f7625282c2d4" name="Changes by habso" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,36 +92,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "code.cleanup.on.save": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "Redis",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/domin/Documents/FTIMS/SEMESTR_V/nierelacyjne_bazy_danych/NBD/NBD/src/main/java/redis",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.15517241",
-    "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.archetype.catalogs",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Redis&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/domin/Documents/FTIMS/SEMESTR_V/nierelacyjne_bazy_danych/NBD/NBD/src/main/java/redis&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.15517241&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.archetype.catalogs&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql",
-      "mongo"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;,
+      &quot;mongo&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="storage" />
@@ -135,7 +131,16 @@
       <recent name="C:\Users\habso\Documents\Pl\NBD\NBD\NBD\src\main\resources\META-INF" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RedisTest.addClientTest">
+  <component name="RunManager" selected="JUnit.RedisTest.noRedisTest">
+    <configuration name="MongoDBTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NBD" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MongoDBTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RedisTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NBD" />
       <option name="PACKAGE_NAME" value="" />
@@ -145,31 +150,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedisTest.addClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RedisTest.noRedisTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NBD" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RedisTest" />
-      <option name="METHOD_NAME" value="addClientTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RedisTest.clearCacheTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="NBD" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RedisTest" />
-      <option name="METHOD_NAME" value="clearCacheTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RedisTest.removeClientsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="NBD" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RedisTest" />
-      <option name="METHOD_NAME" value="removeClientsTest" />
+      <option name="METHOD_NAME" value="noRedisTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -178,6 +163,14 @@
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="dockerfiles: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="dockerfiles/docker-compose.yml" />
+        </settings>
       </deployment>
       <method v="2" />
     </configuration>
@@ -191,10 +184,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RedisTest.noRedisTest" />
+        <item itemvalue="JUnit.MongoDBTest" />
+        <item itemvalue="Docker.dockerfiles: Compose Deployment" />
         <item itemvalue="JUnit.RedisTest" />
-        <item itemvalue="JUnit.RedisTest.clearCacheTest" />
-        <item itemvalue="JUnit.RedisTest.addClientTest" />
-        <item itemvalue="JUnit.RedisTest.removeClientsTest" />
         <item itemvalue="Docker.mongocustom: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -234,6 +227,8 @@
       <workItem from="1700147487346" duration="1684000" />
       <workItem from="1700152104922" duration="1641000" />
       <workItem from="1701791743579" duration="8942000" />
+      <workItem from="1701883799567" duration="799000" />
+      <workItem from="1701884601834" duration="477000" />
     </task>
     <servers />
   </component>

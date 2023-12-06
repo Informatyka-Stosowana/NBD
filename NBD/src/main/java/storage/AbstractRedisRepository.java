@@ -12,7 +12,6 @@ import java.util.Set;
 import java.util.prefs.Preferences;
 
 public abstract class AbstractRedisRepository {
-
     private static final Jsonb jsonb = JsonbBuilder.create();
     private static JedisPooled pool;
 

@@ -14,8 +14,7 @@
       <LocalIntrospectionTimestamp>2023-11-13.18:18:58</LocalIntrospectionTimestamp>
     </schema>
     <schema id="5" parent="1" name="rentDB">
-      <LocalIntrospectionTimestamp>2023-11-13.20:17:21</LocalIntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-11-16.17:17:54</LocalIntrospectionTimestamp>
     </schema>
-    <table id="6" parent="5" name="vehicles"/>
   </database-model>
 </dataSource>

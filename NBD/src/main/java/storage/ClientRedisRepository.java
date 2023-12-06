@@ -1,15 +1,22 @@
 package storage;
 
-import redis.ClientAddress;
+import model.ClientAddress;
 
 public class ClientRedisRepository extends AbstractRedisRepository {
 
+    private final ClientMongoRepository clientMongoRepository;
 
-    public ClientRedisRepository() {
+    public ClientRedisRepository(ClientMongoRepository clientMongoRepository) {
+        this.clientMongoRepository = clientMongoRepository;
         initDbConnection();
     }
 
     public ClientAddress getClient(int personalId) {
+        try {
+            checkConnection();
+        } catch (Exception e) {
+            clientMongoRepository.getClient(personalId);
+        }
         String temp = getPool().get("client:" + personalId);
         if (temp == null) return null;
         return getJsonb().fromJson(temp, ClientAddress.class);

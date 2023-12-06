@@ -1,5 +1,6 @@
 package model;
 
+import jakarta.json.bind.annotation.JsonbCreator;
 import org.bson.codecs.pojo.annotations.BsonCreator;
 import org.bson.codecs.pojo.annotations.BsonProperty;
 
@@ -22,6 +23,7 @@ public class ClientAddress {
     private final int postcode;
 
     @BsonCreator
+    @JsonbCreator
     public ClientAddress(@BsonProperty("_id") int personalId,
                          @BsonProperty("firstName") String firstName,
                          @BsonProperty("lastname") String lastName,
