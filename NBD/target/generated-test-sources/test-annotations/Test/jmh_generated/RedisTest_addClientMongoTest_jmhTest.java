@@ -1,4 +1,4 @@
-package model.jmh_generated;
+package Test.jmh_generated;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -32,8 +32,8 @@ import org.openjdk.jmh.results.ScalarResult;
 import org.openjdk.jmh.results.AggregationPolicy;
 import org.openjdk.jmh.runner.FailureAssistException;
 
-import model.jmh_generated.BenchmarkRunner_jmhType;
-public final class BenchmarkRunner_init_jmhTest {
+import Test.jmh_generated.RedisTest_jmhType;
+public final class RedisTest_addClientMongoTest_jmhTest {
 
     byte p000, p001, p002, p003, p004, p005, p006, p007, p008, p009, p010, p011, p012, p013, p014, p015;
     byte p016, p017, p018, p019, p020, p021, p022, p023, p024, p025, p026, p027, p028, p029, p030, p031;
@@ -58,7 +58,7 @@ public final class BenchmarkRunner_init_jmhTest {
     Blackhole blackhole;
     Control notifyControl;
 
-    public BenchmarkTaskResult init_Throughput(InfraControl control, ThreadParams threadParams) throws Throwable {
+    public BenchmarkTaskResult addClientMongoTest_Throughput(InfraControl control, ThreadParams threadParams) throws Throwable {
         this.benchmarkParams = control.benchmarkParams;
         this.iterationParams = control.iterationParams;
         this.threadParams    = threadParams;
@@ -68,24 +68,24 @@ public final class BenchmarkRunner_init_jmhTest {
         }
         if (threadParams.getSubgroupIndex() == 0) {
             RawResults res = new RawResults();
-            BenchmarkRunner_jmhType l_benchmarkrunner0_0 = _jmh_tryInit_f_benchmarkrunner0_0(control);
+            RedisTest_jmhType l_redistest0_0 = _jmh_tryInit_f_redistest0_0(control);
 
             control.preSetup();
 
 
             control.announceWarmupReady();
             while (control.warmupShouldWait) {
-                l_benchmarkrunner0_0.init();
+                l_redistest0_0.addClientMongoTest();
                 res.allOps++;
             }
 
             notifyControl.startMeasurement = true;
-            init_thrpt_jmhStub(control, res, benchmarkParams, iterationParams, threadParams, blackhole, notifyControl, startRndMask, l_benchmarkrunner0_0);
+            addClientMongoTest_thrpt_jmhStub(control, res, benchmarkParams, iterationParams, threadParams, blackhole, notifyControl, startRndMask, l_redistest0_0);
             notifyControl.stopMeasurement = true;
             control.announceWarmdownReady();
             try {
                 while (control.warmdownShouldWait) {
-                    l_benchmarkrunner0_0.init();
+                    l_redistest0_0.addClientMongoTest();
                     res.allOps++;
                 }
             } catch (Throwable e) {
@@ -94,7 +94,7 @@ public final class BenchmarkRunner_init_jmhTest {
             control.preTearDown();
 
             if (control.isLastIteration()) {
-                f_benchmarkrunner0_0 = null;
+                f_redistest0_0 = null;
             }
             res.allOps += res.measuredOps;
             int batchSize = iterationParams.getBatchSize();
@@ -104,19 +104,19 @@ public final class BenchmarkRunner_init_jmhTest {
             res.measuredOps *= opsPerInv;
             res.measuredOps /= batchSize;
             BenchmarkTaskResult results = new BenchmarkTaskResult((long)res.allOps, (long)res.measuredOps);
-            results.add(new ThroughputResult(ResultRole.PRIMARY, "init", res.measuredOps, res.getTime(), benchmarkParams.getTimeUnit()));
+            results.add(new ThroughputResult(ResultRole.PRIMARY, "addClientMongoTest", res.measuredOps, res.getTime(), benchmarkParams.getTimeUnit()));
             this.blackhole.evaporate("Yes, I am Stephen Hawking, and know a thing or two about black holes.");
             return results;
         } else
             throw new IllegalStateException("Harness failed to distribute threads among groups properly");
     }
 
-    public static void init_thrpt_jmhStub(InfraControl control, RawResults result, BenchmarkParams benchmarkParams, IterationParams iterationParams, ThreadParams threadParams, Blackhole blackhole, Control notifyControl, int startRndMask, BenchmarkRunner_jmhType l_benchmarkrunner0_0) throws Throwable {
+    public static void addClientMongoTest_thrpt_jmhStub(InfraControl control, RawResults result, BenchmarkParams benchmarkParams, IterationParams iterationParams, ThreadParams threadParams, Blackhole blackhole, Control notifyControl, int startRndMask, RedisTest_jmhType l_redistest0_0) throws Throwable {
         long operations = 0;
         long realTime = 0;
         result.startTime = System.nanoTime();
         do {
-            l_benchmarkrunner0_0.init();
+            l_redistest0_0.addClientMongoTest();
             operations++;
         } while(!control.isDone);
         result.stopTime = System.nanoTime();
@@ -125,7 +125,7 @@ public final class BenchmarkRunner_init_jmhTest {
     }
 
 
-    public BenchmarkTaskResult init_AverageTime(InfraControl control, ThreadParams threadParams) throws Throwable {
+    public BenchmarkTaskResult addClientMongoTest_AverageTime(InfraControl control, ThreadParams threadParams) throws Throwable {
         this.benchmarkParams = control.benchmarkParams;
         this.iterationParams = control.iterationParams;
         this.threadParams    = threadParams;
@@ -135,24 +135,24 @@ public final class BenchmarkRunner_init_jmhTest {
         }
         if (threadParams.getSubgroupIndex() == 0) {
             RawResults res = new RawResults();
-            BenchmarkRunner_jmhType l_benchmarkrunner0_0 = _jmh_tryInit_f_benchmarkrunner0_0(control);
+            RedisTest_jmhType l_redistest0_0 = _jmh_tryInit_f_redistest0_0(control);
 
             control.preSetup();
 
 
             control.announceWarmupReady();
             while (control.warmupShouldWait) {
-                l_benchmarkrunner0_0.init();
+                l_redistest0_0.addClientMongoTest();
                 res.allOps++;
             }
 
             notifyControl.startMeasurement = true;
-            init_avgt_jmhStub(control, res, benchmarkParams, iterationParams, threadParams, blackhole, notifyControl, startRndMask, l_benchmarkrunner0_0);
+            addClientMongoTest_avgt_jmhStub(control, res, benchmarkParams, iterationParams, threadParams, blackhole, notifyControl, startRndMask, l_redistest0_0);
             notifyControl.stopMeasurement = true;
             control.announceWarmdownReady();
             try {
                 while (control.warmdownShouldWait) {
-                    l_benchmarkrunner0_0.init();
+                    l_redistest0_0.addClientMongoTest();
                     res.allOps++;
                 }
             } catch (Throwable e) {
@@ -161,7 +161,7 @@ public final class BenchmarkRunner_init_jmhTest {
             control.preTearDown();
 
             if (control.isLastIteration()) {
-                f_benchmarkrunner0_0 = null;
+                f_redistest0_0 = null;
             }
             res.allOps += res.measuredOps;
             int batchSize = iterationParams.getBatchSize();
@@ -171,19 +171,19 @@ public final class BenchmarkRunner_init_jmhTest {
             res.measuredOps *= opsPerInv;
             res.measuredOps /= batchSize;
             BenchmarkTaskResult results = new BenchmarkTaskResult((long)res.allOps, (long)res.measuredOps);
-            results.add(new AverageTimeResult(ResultRole.PRIMARY, "init", res.measuredOps, res.getTime(), benchmarkParams.getTimeUnit()));
+            results.add(new AverageTimeResult(ResultRole.PRIMARY, "addClientMongoTest", res.measuredOps, res.getTime(), benchmarkParams.getTimeUnit()));
             this.blackhole.evaporate("Yes, I am Stephen Hawking, and know a thing or two about black holes.");
             return results;
         } else
             throw new IllegalStateException("Harness failed to distribute threads among groups properly");
     }
 
-    public static void init_avgt_jmhStub(InfraControl control, RawResults result, BenchmarkParams benchmarkParams, IterationParams iterationParams, ThreadParams threadParams, Blackhole blackhole, Control notifyControl, int startRndMask, BenchmarkRunner_jmhType l_benchmarkrunner0_0) throws Throwable {
+    public static void addClientMongoTest_avgt_jmhStub(InfraControl control, RawResults result, BenchmarkParams benchmarkParams, IterationParams iterationParams, ThreadParams threadParams, Blackhole blackhole, Control notifyControl, int startRndMask, RedisTest_jmhType l_redistest0_0) throws Throwable {
         long operations = 0;
         long realTime = 0;
         result.startTime = System.nanoTime();
         do {
-            l_benchmarkrunner0_0.init();
+            l_redistest0_0.addClientMongoTest();
             operations++;
         } while(!control.isDone);
         result.stopTime = System.nanoTime();
@@ -192,7 +192,7 @@ public final class BenchmarkRunner_init_jmhTest {
     }
 
 
-    public BenchmarkTaskResult init_SampleTime(InfraControl control, ThreadParams threadParams) throws Throwable {
+    public BenchmarkTaskResult addClientMongoTest_SampleTime(InfraControl control, ThreadParams threadParams) throws Throwable {
         this.benchmarkParams = control.benchmarkParams;
         this.iterationParams = control.iterationParams;
         this.threadParams    = threadParams;
@@ -202,14 +202,14 @@ public final class BenchmarkRunner_init_jmhTest {
         }
         if (threadParams.getSubgroupIndex() == 0) {
             RawResults res = new RawResults();
-            BenchmarkRunner_jmhType l_benchmarkrunner0_0 = _jmh_tryInit_f_benchmarkrunner0_0(control);
+            RedisTest_jmhType l_redistest0_0 = _jmh_tryInit_f_redistest0_0(control);
 
             control.preSetup();
 
 
             control.announceWarmupReady();
             while (control.warmupShouldWait) {
-                l_benchmarkrunner0_0.init();
+                l_redistest0_0.addClientMongoTest();
                 res.allOps++;
             }
 
@@ -218,12 +218,12 @@ public final class BenchmarkRunner_init_jmhTest {
             int batchSize = iterationParams.getBatchSize();
             int opsPerInv = benchmarkParams.getOpsPerInvocation();
             SampleBuffer buffer = new SampleBuffer();
-            init_sample_jmhStub(control, res, benchmarkParams, iterationParams, threadParams, blackhole, notifyControl, startRndMask, buffer, targetSamples, opsPerInv, batchSize, l_benchmarkrunner0_0);
+            addClientMongoTest_sample_jmhStub(control, res, benchmarkParams, iterationParams, threadParams, blackhole, notifyControl, startRndMask, buffer, targetSamples, opsPerInv, batchSize, l_redistest0_0);
             notifyControl.stopMeasurement = true;
             control.announceWarmdownReady();
             try {
                 while (control.warmdownShouldWait) {
-                    l_benchmarkrunner0_0.init();
+                    l_redistest0_0.addClientMongoTest();
                     res.allOps++;
                 }
             } catch (Throwable e) {
@@ -232,21 +232,21 @@ public final class BenchmarkRunner_init_jmhTest {
             control.preTearDown();
 
             if (control.isLastIteration()) {
-                f_benchmarkrunner0_0 = null;
+                f_redistest0_0 = null;
             }
             res.allOps += res.measuredOps * batchSize;
             res.allOps *= opsPerInv;
             res.allOps /= batchSize;
             res.measuredOps *= opsPerInv;
             BenchmarkTaskResult results = new BenchmarkTaskResult((long)res.allOps, (long)res.measuredOps);
-            results.add(new SampleTimeResult(ResultRole.PRIMARY, "init", buffer, benchmarkParams.getTimeUnit()));
+            results.add(new SampleTimeResult(ResultRole.PRIMARY, "addClientMongoTest", buffer, benchmarkParams.getTimeUnit()));
             this.blackhole.evaporate("Yes, I am Stephen Hawking, and know a thing or two about black holes.");
             return results;
         } else
             throw new IllegalStateException("Harness failed to distribute threads among groups properly");
     }
 
-    public static void init_sample_jmhStub(InfraControl control, RawResults result, BenchmarkParams benchmarkParams, IterationParams iterationParams, ThreadParams threadParams, Blackhole blackhole, Control notifyControl, int startRndMask, SampleBuffer buffer, int targetSamples, long opsPerInv, int batchSize, BenchmarkRunner_jmhType l_benchmarkrunner0_0) throws Throwable {
+    public static void addClientMongoTest_sample_jmhStub(InfraControl control, RawResults result, BenchmarkParams benchmarkParams, IterationParams iterationParams, ThreadParams threadParams, Blackhole blackhole, Control notifyControl, int startRndMask, SampleBuffer buffer, int targetSamples, long opsPerInv, int batchSize, RedisTest_jmhType l_redistest0_0) throws Throwable {
         long realTime = 0;
         long operations = 0;
         int rnd = (int)System.nanoTime();
@@ -261,7 +261,7 @@ public final class BenchmarkRunner_init_jmhTest {
             }
             for (int b = 0; b < batchSize; b++) {
                 if (control.volatileSpoiler) return;
-                l_benchmarkrunner0_0.init();
+                l_redistest0_0.addClientMongoTest();
             }
             if (sample) {
                 buffer.add((System.nanoTime() - time) / opsPerInv);
@@ -279,7 +279,7 @@ public final class BenchmarkRunner_init_jmhTest {
     }
 
 
-    public BenchmarkTaskResult init_SingleShotTime(InfraControl control, ThreadParams threadParams) throws Throwable {
+    public BenchmarkTaskResult addClientMongoTest_SingleShotTime(InfraControl control, ThreadParams threadParams) throws Throwable {
         this.benchmarkParams = control.benchmarkParams;
         this.iterationParams = control.iterationParams;
         this.threadParams    = threadParams;
@@ -288,7 +288,7 @@ public final class BenchmarkRunner_init_jmhTest {
             this.blackhole = new Blackhole("Today's password is swordfish. I understand instantiating Blackholes directly is dangerous.");
         }
         if (threadParams.getSubgroupIndex() == 0) {
-            BenchmarkRunner_jmhType l_benchmarkrunner0_0 = _jmh_tryInit_f_benchmarkrunner0_0(control);
+            RedisTest_jmhType l_redistest0_0 = _jmh_tryInit_f_redistest0_0(control);
 
             control.preSetup();
 
@@ -296,42 +296,42 @@ public final class BenchmarkRunner_init_jmhTest {
             notifyControl.startMeasurement = true;
             RawResults res = new RawResults();
             int batchSize = iterationParams.getBatchSize();
-            init_ss_jmhStub(control, res, benchmarkParams, iterationParams, threadParams, blackhole, notifyControl, startRndMask, batchSize, l_benchmarkrunner0_0);
+            addClientMongoTest_ss_jmhStub(control, res, benchmarkParams, iterationParams, threadParams, blackhole, notifyControl, startRndMask, batchSize, l_redistest0_0);
             control.preTearDown();
 
             if (control.isLastIteration()) {
-                f_benchmarkrunner0_0 = null;
+                f_redistest0_0 = null;
             }
             int opsPerInv = control.benchmarkParams.getOpsPerInvocation();
             long totalOps = opsPerInv;
             BenchmarkTaskResult results = new BenchmarkTaskResult(totalOps, totalOps);
-            results.add(new SingleShotResult(ResultRole.PRIMARY, "init", res.getTime(), totalOps, benchmarkParams.getTimeUnit()));
+            results.add(new SingleShotResult(ResultRole.PRIMARY, "addClientMongoTest", res.getTime(), totalOps, benchmarkParams.getTimeUnit()));
             this.blackhole.evaporate("Yes, I am Stephen Hawking, and know a thing or two about black holes.");
             return results;
         } else
             throw new IllegalStateException("Harness failed to distribute threads among groups properly");
     }
 
-    public static void init_ss_jmhStub(InfraControl control, RawResults result, BenchmarkParams benchmarkParams, IterationParams iterationParams, ThreadParams threadParams, Blackhole blackhole, Control notifyControl, int startRndMask, int batchSize, BenchmarkRunner_jmhType l_benchmarkrunner0_0) throws Throwable {
+    public static void addClientMongoTest_ss_jmhStub(InfraControl control, RawResults result, BenchmarkParams benchmarkParams, IterationParams iterationParams, ThreadParams threadParams, Blackhole blackhole, Control notifyControl, int startRndMask, int batchSize, RedisTest_jmhType l_redistest0_0) throws Throwable {
         long realTime = 0;
         result.startTime = System.nanoTime();
         for (int b = 0; b < batchSize; b++) {
             if (control.volatileSpoiler) return;
-            l_benchmarkrunner0_0.init();
+            l_redistest0_0.addClientMongoTest();
         }
         result.stopTime = System.nanoTime();
         result.realTime = realTime;
     }
 
     
-    BenchmarkRunner_jmhType f_benchmarkrunner0_0;
+    RedisTest_jmhType f_redistest0_0;
     
-    BenchmarkRunner_jmhType _jmh_tryInit_f_benchmarkrunner0_0(InfraControl control) throws Throwable {
+    RedisTest_jmhType _jmh_tryInit_f_redistest0_0(InfraControl control) throws Throwable {
         if (control.isFailing) throw new FailureAssistException();
-        BenchmarkRunner_jmhType val = f_benchmarkrunner0_0;
+        RedisTest_jmhType val = f_redistest0_0;
         if (val == null) {
-            val = new BenchmarkRunner_jmhType();
-            f_benchmarkrunner0_0 = val;
+            val = new RedisTest_jmhType();
+            f_redistest0_0 = val;
         }
         return val;
     }
