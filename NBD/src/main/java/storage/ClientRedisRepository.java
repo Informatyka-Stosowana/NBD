@@ -13,11 +13,11 @@ public class ClientRedisRepository extends AbstractRedisRepository {
     }
 
     public ClientAddress getClient(int personalId) {
-        try {
-            checkConnection();
-        } catch (Exception e) {
-            return clientMongoRepository.getClient(personalId);
-        }
+//        try {
+//            checkConnection();
+//        } catch (Exception e) {
+//            return clientMongoRepository.getClient(personalId);
+//        }
         String temp = getPool().get("client:" + personalId);
         if (temp == null) return null;
         return getJsonb().fromJson(temp, ClientAddress.class);

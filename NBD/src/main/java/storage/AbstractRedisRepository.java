@@ -4,6 +4,9 @@ import jakarta.json.bind.Jsonb;
 import jakarta.json.bind.JsonbBuilder;
 import org.ini4j.Ini;
 import org.ini4j.IniPreferences;
+import redis.clients.jedis.DefaultJedisClientConfig;
+import redis.clients.jedis.HostAndPort;
+import redis.clients.jedis.JedisClientConfig;
 import redis.clients.jedis.JedisPooled;
 
 import java.io.File;
@@ -29,8 +32,10 @@ public abstract class AbstractRedisRepository {
             Ini ini = new Ini(file);
 
             Preferences preferences = new IniPreferences(ini);
+            JedisClientConfig clientConfig = DefaultJedisClientConfig.builder().build();
 
-            pool = new JedisPooled(preferences.node("ConnectionString").get("ConnectionString", "ConnectionString"));
+//            pool = new JedisPooled(preferences.node("ConnectionString").get("ConnectionString", "ConnectionString"));
+            pool = new JedisPooled(new HostAndPort("localhost", 6379), clientConfig);
 
         } catch (IOException e) {
             e.printStackTrace();
