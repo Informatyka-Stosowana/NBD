@@ -29,6 +29,7 @@ public abstract class AbstractRedisRepository {
             Ini ini = new Ini(file);
 
             Preferences preferences = new IniPreferences(ini);
+
             pool = new JedisPooled(preferences.node("ConnectionString").get("ConnectionString", "ConnectionString"));
 
         } catch (IOException e) {

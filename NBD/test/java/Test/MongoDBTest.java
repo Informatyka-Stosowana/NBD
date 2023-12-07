@@ -1,3 +1,5 @@
+package Test;
+
 import com.mongodb.MongoWriteException;
 import model.Car;
 import model.ClientAddress;
