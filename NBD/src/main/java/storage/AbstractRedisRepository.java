@@ -31,13 +31,13 @@ public abstract class AbstractRedisRepository {
             File file = new File("./src/resources/conf.ini");
             Ini ini = new Ini(file);
 
-
             Preferences preferences = new IniPreferences(ini);
             JedisClientConfig clientConfig = DefaultJedisClientConfig.builder().socketTimeoutMillis(5000).build();
 
             pool = new JedisPooled(new HostAndPort(preferences.node("HostPort").get("host", "host"),
                     Integer.parseInt(preferences.node("HostPort").get("port", "port"))), clientConfig);
 //            pool = new JedisPooled(preferences.node("ConnectionString").get("ConnectionString", "ConnectionString"));
+
 
         } catch (IOException e) {
             e.printStackTrace();
