@@ -36,7 +36,6 @@ public abstract class AbstractRedisRepository {
 
             pool = new JedisPooled(new HostAndPort(preferences.node("HostPort").get("host", "host"),
                     Integer.parseInt(preferences.node("HostPort").get("port", "port"))), clientConfig);
-//            pool = new JedisPooled(preferences.node("ConnectionString").get("ConnectionString", "ConnectionString"));
 
 
         } catch (IOException e) {

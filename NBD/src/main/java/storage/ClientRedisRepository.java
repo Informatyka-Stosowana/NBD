@@ -26,6 +26,7 @@ public class ClientRedisRepository extends AbstractRedisRepository {
     public void addClient(ClientAddress client) {
         String temp = getJsonb().toJson(client);
         getPool().set("client:" + client.getPersonalId(), temp);
+        getPool().expire("client:" + client.getPersonalId(), 5);
     }
 
     public void removeClient(int personalId) {

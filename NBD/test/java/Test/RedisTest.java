@@ -25,6 +25,7 @@ public class RedisTest {
 
         Assertions.assertNotNull(clientRedisRepository.getClient(1));
         Assertions.assertNull(clientRedisRepository.getClient(2));
+
         clientRedisRepository.clearCache();
         clientRedisRepository.close();
     }
@@ -93,5 +94,21 @@ public class RedisTest {
     public void benchmarkTest() throws IOException {
         String[] argv = {};
         org.openjdk.jmh.Main.main(argv);
+    }
+
+    @Test
+    public void expireTest() throws Exception {
+        ClientAddress clientAddress1 = new ClientAddress(1, "Mariusz", "Pudzianowski", 1, "Pudzianowska", 200, "Pudzianów", 123456);
+        ClientMongoRepository clientMongoRepository = new ClientMongoRepository();
+        ClientRedisRepository clientRedisRepository = new ClientRedisRepository(clientMongoRepository);
+        clientRedisRepository.addClient(clientAddress1);
+
+        Thread.sleep(2000);
+        Assertions.assertNotNull(clientRedisRepository.getClient(1));
+        Thread.sleep(4000);
+        Assertions.assertNull(clientRedisRepository.getClient(1));
+
+        clientRedisRepository.clearCache();
+        clientRedisRepository.close();
     }
 }

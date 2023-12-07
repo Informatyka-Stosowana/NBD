@@ -28,15 +28,10 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Vehicle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/AbstractMongoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/AbstractMongoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/AbstractRedisRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/AbstractRedisRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/ClientManager.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/ClientMongoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/ClientMongoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/ClientRedisRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/ClientRedisRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/RentManager.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/RentMongoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/RentMongoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/RentRedisRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/VehicleManager.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/VehicleMongoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/VehicleMongoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/VehicleRedisRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/conf.ini" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/conf.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-test-sources/test-annotations/Test/jmh_generated/RedisTest_addClientMongoTest_jmhTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-test-sources/test-annotations/Test/jmh_generated/RedisTest_addClientMongoTest_jmhTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-test-sources/test-annotations/Test/jmh_generated/RedisTest_addClientTest_jmhTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-test-sources/test-annotations/Test/jmh_generated/RedisTest_addClientTest_jmhTest.java" afterDir="false" />
@@ -89,54 +84,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Docker.dockerfiles.mongo_1: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.dockerfiles.mongo_2: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.dockerfiles.mongo_3: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.dockerfiles.mongoinit: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.dockerfiles: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.redis.redis-stack: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.redis: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.singlemongo.mongodb: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.singlemongo.redis: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.singlemongo: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MongoDBTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RedisTest.addClientTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RedisTest.clearCacheTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RedisTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RedisTest.noRedisTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RedisTest.removeClientsTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Redis&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/domin/Documents/FTIMS/SEMESTR_V/nierelacyjne_bazy_danych/NBD/NBD/src/main/java/redis&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.15517241&quot;,
-    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.archetype.catalogs&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.dockerfiles.mongo_1: Compose Deployment.executor": "Run",
+    "Docker.dockerfiles.mongo_2: Compose Deployment.executor": "Run",
+    "Docker.dockerfiles.mongo_3: Compose Deployment.executor": "Run",
+    "Docker.dockerfiles.mongoinit: Compose Deployment.executor": "Run",
+    "Docker.dockerfiles: Compose Deployment.executor": "Run",
+    "Docker.redis.redis-stack: Compose Deployment.executor": "Run",
+    "Docker.redis: Compose Deployment.executor": "Run",
+    "Docker.singlemongo.mongodb: Compose Deployment.executor": "Run",
+    "Docker.singlemongo.redis: Compose Deployment.executor": "Run",
+    "Docker.singlemongo: Compose Deployment.executor": "Run",
+    "JUnit.MongoDBTest.executor": "Run",
+    "JUnit.RedisTest.addClientTest.executor": "Run",
+    "JUnit.RedisTest.clearCacheTest.executor": "Run",
+    "JUnit.RedisTest.executor": "Run",
+    "JUnit.RedisTest.expireTest.executor": "Run",
+    "JUnit.RedisTest.noRedisTest.executor": "Run",
+    "JUnit.RedisTest.removeClientsTest.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "code.cleanup.on.save": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "Redis",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/domin/Documents/FTIMS/SEMESTR_V/nierelacyjne_bazy_danych/NBD/NBD/src/main/java/redis",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.15517241",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.archetype.catalogs",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;,
-      &quot;mongo&quot;,
-      &quot;redis&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql",
+      "mongo",
+      "redis"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="storage" />
@@ -150,6 +146,21 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.RedisTest">
+    <configuration name="MongoDBTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NBD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.MongoDBTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RedisTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NBD" />
       <extension name="coverage">
@@ -161,22 +172,6 @@
       <option name="PACKAGE_NAME" value="Test" />
       <option name="MAIN_CLASS_NAME" value="Test.RedisTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RedisTest.addClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="NBD" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.RedisTest" />
-      <option name="METHOD_NAME" value="addClientTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -197,7 +192,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedisTest.clearCacheTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RedisTest.expireTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NBD" />
       <extension name="coverage">
         <pattern>
@@ -207,7 +202,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
       <option name="MAIN_CLASS_NAME" value="Test.RedisTest" />
-      <option name="METHOD_NAME" value="clearCacheTest" />
+      <option name="METHOD_NAME" value="expireTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -230,10 +225,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RedisTest" />
+        <item itemvalue="JUnit.MongoDBTest" />
+        <item itemvalue="JUnit.RedisTest.expireTest" />
         <item itemvalue="Docker.dockerfiles: Compose Deployment" />
         <item itemvalue="JUnit.RedisTest.benchmarkTest" />
-        <item itemvalue="JUnit.RedisTest.addClientTest" />
-        <item itemvalue="JUnit.RedisTest.clearCacheTest" />
       </list>
     </recent_temporary>
   </component>
@@ -287,7 +282,7 @@
       <workItem from="1701948483732" duration="5935000" />
       <workItem from="1701954483284" duration="708000" />
       <workItem from="1701955212841" duration="2220000" />
-      <workItem from="1701957846349" duration="1552000" />
+      <workItem from="1701957846349" duration="4593000" />
     </task>
     <servers />
   </component>
