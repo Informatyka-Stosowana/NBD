@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21255cd7-98e6-4e4e-abc1-d513566396e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/BenchmarkRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/50402a81-22be-421d-8326-5e42e460026d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/50402a81-22be-421d-8326-5e42e460026d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50402a81-22be-421d-8326-5e42e460026d/storage_v2/_src_/schema/rentDB.d3lLyA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/50402a81-22be-421d-8326-5e42e460026d/storage_v2/_src_/schema/rentDB.d3lLyA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
@@ -23,11 +19,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NBD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/NBD.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dockerfiles/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerfiles/mongocustom/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/mongocustom/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerfiles/mongocustom/keyFile" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/mongocustom/keyFile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerfiles/mongocustom/mongod.conf" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/mongocustom/mongod.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerfiles/redis/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/redis/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerfiles/mongocustom/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerfiles/mongocustom/keyFile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerfiles/mongocustom/mongod.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerfiles/redis/docker-compose.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/BenchmarkRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/BenchmarkRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Bicycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Bicycle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/ClientAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ClientAddress.java" afterDir="false" />
@@ -46,9 +43,23 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/VehicleMongoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/VehicleMongoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/VehicleRedisRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/VehicleRedisRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/conf.ini" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/conf.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/MongoDBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/Test/MongoDBTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/RedisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/Test/RedisTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/BenchmarkList" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/CompilerHints" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/jmh_generated/BenchmarkRunner_getClient_jmhTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/jmh_generated/BenchmarkRunner_getClient_jmhTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/jmh_generated/BenchmarkRunner_init_jmhTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/jmh_generated/BenchmarkRunner_init_jmhTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/jmh_generated/BenchmarkRunner_jmhType.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/jmh_generated/BenchmarkRunner_jmhType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/jmh_generated/BenchmarkRunner_jmhType_B1.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/jmh_generated/BenchmarkRunner_jmhType_B1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/jmh_generated/BenchmarkRunner_jmhType_B2.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/jmh_generated/BenchmarkRunner_jmhType_B2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/jmh_generated/BenchmarkRunner_jmhType_B3.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/jmh_generated/BenchmarkRunner_jmhType_B3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-test-sources/test-annotations/Test/jmh_generated/RedisTest_addClientTest_jmhTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-test-sources/test-annotations/Test/jmh_generated/RedisTest_addClientTest_jmhTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-test-sources/test-annotations/Test/jmh_generated/RedisTest_jmhType.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-test-sources/test-annotations/Test/jmh_generated/RedisTest_jmhType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-test-sources/test-annotations/Test/jmh_generated/RedisTest_jmhType_B1.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-test-sources/test-annotations/Test/jmh_generated/RedisTest_jmhType_B1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-test-sources/test-annotations/Test/jmh_generated/RedisTest_jmhType_B2.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-test-sources/test-annotations/Test/jmh_generated/RedisTest_jmhType_B2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-test-sources/test-annotations/Test/jmh_generated/RedisTest_jmhType_B3.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-test-sources/test-annotations/Test/jmh_generated/RedisTest_jmhType_B3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/BenchmarkList" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/META-INF/BenchmarkList" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/CompilerHints" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/META-INF/CompilerHints" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/Test/MongoDBTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/Test/MongoDBTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/Test/RedisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/Test/RedisTest.java" afterDir="false" />
     </list>
     <list id="acb19ce2-05ca-4e97-9177-2e3304964a7a" name="Changes by chuj" comment="" />
     <list id="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" name="Changes by domin" comment="" />
@@ -92,6 +103,22 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Docker.dockerfiles.mongo_1: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dockerfiles.mongo_2: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dockerfiles.mongo_3: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dockerfiles.mongoinit: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dockerfiles: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.redis.redis-stack: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.redis: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.singlemongo.mongodb: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.singlemongo.redis: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.singlemongo: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MongoDBTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RedisTest.addClientTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RedisTest.clearCacheTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RedisTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RedisTest.noRedisTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RedisTest.removeClientsTest.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -100,6 +127,7 @@
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;Redis&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/domin/Documents/FTIMS/SEMESTR_V/nierelacyjne_bazy_danych/NBD/NBD/src/main/java/redis&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -116,7 +144,8 @@
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
       &quot;postgresql&quot;,
-      &quot;mongo&quot;
+      &quot;mongo&quot;,
+      &quot;redis&quot;
     ]
   }
 }</component>
@@ -128,9 +157,12 @@
       <recent name="C:\Users\domin\Documents\FTIMS\SEMESTR_V\nierelacyjne_bazy_danych\NBD\NBD\src\main\java\redis" />
       <recent name="C:\Users\habso\Documents\Pl\NBD\NBD\NBD\src\main\resources\META-INF" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\habso\Documents\Pl\NBD\NBD\NBD\dockerfiles" />
+    </key>
   </component>
   <component name="RunManager" selected="JUnit.RedisTest">
-    <configuration name="MongoDBTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RedisTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NBD" />
       <extension name="coverage">
         <pattern>
@@ -139,13 +171,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.MongoDBTest" />
+      <option name="MAIN_CLASS_NAME" value="Test.RedisTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MongoDBTest.addRemoveClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RedisTest.addClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NBD" />
       <extension name="coverage">
         <pattern>
@@ -154,18 +186,41 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.MongoDBTest" />
-      <option name="METHOD_NAME" value="addRemoveClientTest" />
+      <option name="MAIN_CLASS_NAME" value="Test.RedisTest" />
+      <option name="METHOD_NAME" value="addClientTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedisTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RedisTest.benchmarkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NBD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="PACKAGE_NAME" value="Test" />
       <option name="MAIN_CLASS_NAME" value="Test.RedisTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="benchmarkTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisTest.clearCacheTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NBD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.RedisTest" />
+      <option name="METHOD_NAME" value="clearCacheTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -176,7 +231,7 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="dockerfiles: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker2">
+    <configuration name="dockerfiles: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="sourceFilePath" value="dockerfiles/docker-compose.yml" />
@@ -184,23 +239,22 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="redis: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="dockerfiles/redis/docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RedisTest" />
-        <item itemvalue="Docker.redis: Compose Deployment" />
-        <item itemvalue="JUnit.MongoDBTest" />
         <item itemvalue="Docker.dockerfiles: Compose Deployment" />
-        <item itemvalue="JUnit.MongoDBTest.addRemoveClientTest" />
+        <item itemvalue="JUnit.RedisTest.benchmarkTest" />
+        <item itemvalue="JUnit.RedisTest.addClientTest" />
+        <item itemvalue="JUnit.RedisTest.clearCacheTest" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-3183f394aec4-7d648f2c" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -242,6 +296,10 @@
       <workItem from="1701892196672" duration="5292000" />
       <workItem from="1701897607878" duration="2160000" />
       <workItem from="1701947144452" duration="1101000" />
+      <workItem from="1701948483732" duration="5935000" />
+      <workItem from="1701954483284" duration="708000" />
+      <workItem from="1701955212841" duration="2220000" />
+      <workItem from="1701957846349" duration="400000" />
     </task>
     <servers />
   </component>

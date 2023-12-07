@@ -13,11 +13,11 @@ import java.util.concurrent.TimeUnit;
 public class RedisTest {
 
     @Test
-    @Fork(value = 1, warmups = 2)
+    @Fork(value = 1, warmups = 1)
     @BenchmarkMode(Mode.AverageTime)
     @OutputTimeUnit(TimeUnit.NANOSECONDS)
     @Benchmark
-    public void addClientTest() {
+    public void addClientTest() throws Exception {
         ClientAddress clientAddress1 = new ClientAddress(1, "Mariusz", "Pudzianowski", 1, "Pudzianowska", 200, "Pudzianów", 123456);
         ClientMongoRepository clientMongoRepository = new ClientMongoRepository();
         ClientRedisRepository clientRedisRepository = new ClientRedisRepository(clientMongoRepository);
@@ -26,10 +26,11 @@ public class RedisTest {
         Assertions.assertNotNull(clientRedisRepository.getClient(1));
         Assertions.assertNull(clientRedisRepository.getClient(2));
         clientRedisRepository.clearCache();
+        clientRedisRepository.close();
     }
 
     @Test
-    @Fork(value = 1, warmups = 2)
+    @Fork(value = 1, warmups = 1)
     @BenchmarkMode(Mode.AverageTime)
     @OutputTimeUnit(TimeUnit.NANOSECONDS)
     @Benchmark
@@ -62,6 +63,7 @@ public class RedisTest {
         ClientAddress clientAddress1 = new ClientAddress(1, "Mariusz", "Pudzianowski", 1, "Pudzianowska", 200, "Pudzianów", 123456);
         ClientMongoRepository clientMongoRepository = new ClientMongoRepository();
         ClientRedisRepository clientRedisRepository = new ClientRedisRepository(clientMongoRepository);
+
         clientRedisRepository.addClient(clientAddress1);
 
 
@@ -85,6 +87,7 @@ public class RedisTest {
         }
 
         Assertions.assertNotNull(clientRedisRepository.getClient(1));
+        clientMongoRepository.getMongoDatabase().drop();
     }
 
     @Test

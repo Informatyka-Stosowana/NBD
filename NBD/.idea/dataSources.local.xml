@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="IU-232.10227.8">
+  <component name="dataSourceStorageLocal" created-in="IU-233.11799.241">
     <data-source name="MongoDB" uuid="50402a81-22be-421d-8326-5e42e460026d">
-      <database-info product="Mongo DB" version="6.0.2" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.18" dbms="MONGO" exact-version="6.0.2" exact-driver-version="1.18" />
+      <database-info product="Mongo DB" version="7.0.2" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.18" dbms="MONGO" exact-version="7.0.2" exact-driver-version="1.18" />
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
       <user-name>admin</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="schema" negative="1" />
+          <node kind="schema" qname="rentDB" />
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+    <data-source name="0@localhost" uuid="ceceaedf-bd6b-4bb0-bb15-12c0fa75838f">
+      <database-info product="Redis Standalone" version="7.2.3" jdbc-version="4.2" driver-name="Redis JDBC Driver" driver-version="1.4" dbms="REDIS" exact-version="7.2.3" exact-driver-version="1.4" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="@" />
         </introspection-scope>
       </schema-mapping>
     </data-source>
