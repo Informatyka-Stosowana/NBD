@@ -66,7 +66,6 @@ public class RedisTest {
 
         clientRedisRepository.addClient(clientAddress1);
 
-
         Assertions.assertNotNull(clientRedisRepository.getClient(1));
         clientRedisRepository.clearCache();
         Assertions.assertNull(clientRedisRepository.getClient(1));

@@ -19,12 +19,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NBD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/NBD.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dockerfiles/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerfiles/mongocustom/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerfiles/mongocustom/keyFile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerfiles/mongocustom/mongod.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerfiles/redis/docker-compose.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/BenchmarkRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/BenchmarkRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Bicycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Bicycle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/ClientAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ClientAddress.java" afterDir="false" />
@@ -33,24 +28,17 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Vehicle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/AbstractMongoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/AbstractMongoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/AbstractRedisRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/AbstractRedisRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/ClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/ClientManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/ClientManager.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/ClientMongoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/ClientMongoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/ClientRedisRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/ClientRedisRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/RentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/RentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/RentManager.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/RentMongoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/RentMongoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/RentRedisRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/RentRedisRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/VehicleManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/VehicleManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/RentRedisRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/VehicleManager.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/VehicleMongoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/VehicleMongoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/VehicleRedisRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/VehicleRedisRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/VehicleRedisRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/conf.ini" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/conf.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/BenchmarkList" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/CompilerHints" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/jmh_generated/BenchmarkRunner_getClient_jmhTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/jmh_generated/BenchmarkRunner_getClient_jmhTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/jmh_generated/BenchmarkRunner_init_jmhTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/jmh_generated/BenchmarkRunner_init_jmhTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/jmh_generated/BenchmarkRunner_jmhType.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/jmh_generated/BenchmarkRunner_jmhType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/jmh_generated/BenchmarkRunner_jmhType_B1.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/jmh_generated/BenchmarkRunner_jmhType_B1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/jmh_generated/BenchmarkRunner_jmhType_B2.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/jmh_generated/BenchmarkRunner_jmhType_B2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/jmh_generated/BenchmarkRunner_jmhType_B3.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/jmh_generated/BenchmarkRunner_jmhType_B3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-test-sources/test-annotations/Test/jmh_generated/RedisTest_addClientMongoTest_jmhTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-test-sources/test-annotations/Test/jmh_generated/RedisTest_addClientMongoTest_jmhTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-test-sources/test-annotations/Test/jmh_generated/RedisTest_addClientTest_jmhTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-test-sources/test-annotations/Test/jmh_generated/RedisTest_addClientTest_jmhTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-test-sources/test-annotations/Test/jmh_generated/RedisTest_jmhType.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-test-sources/test-annotations/Test/jmh_generated/RedisTest_jmhType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/generated-test-sources/test-annotations/Test/jmh_generated/RedisTest_jmhType_B1.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-test-sources/test-annotations/Test/jmh_generated/RedisTest_jmhType_B1.java" afterDir="false" />
@@ -299,7 +287,7 @@
       <workItem from="1701948483732" duration="5935000" />
       <workItem from="1701954483284" duration="708000" />
       <workItem from="1701955212841" duration="2220000" />
-      <workItem from="1701957846349" duration="400000" />
+      <workItem from="1701957846349" duration="1552000" />
     </task>
     <servers />
   </component>
