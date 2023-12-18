@@ -1,2 +1,0 @@
-JMH S 14 Test.RedisTest S 55 Test.jmh_generated.RedisTest_addClientMongoTest_jmhTest S 18 addClientMongoTest S 11 AverageTime E A 1 1 1 E E E E E E E I 1 1 I 1 1 E E E E E U 11 NANOSECONDS E E 
-JMH S 14 Test.RedisTest S 50 Test.jmh_generated.RedisTest_addClientTest_jmhTest S 13 addClientTest S 11 AverageTime E A 1 1 1 E E E E E E E I 1 1 I 1 1 E E E E E U 11 NANOSECONDS E E 
