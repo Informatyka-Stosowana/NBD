@@ -98,6 +98,7 @@
     "Docker.singlemongo: Compose Deployment.executor": "Run",
     "JUnit.MongoDBTest.executor": "Run",
     "JUnit.RedisTest.addClientTest.executor": "Run",
+    "JUnit.RedisTest.benchmarkTest.executor": "Run",
     "JUnit.RedisTest.clearCacheTest.executor": "Run",
     "JUnit.RedisTest.executor": "Run",
     "JUnit.RedisTest.expireTest.executor": "Run",
@@ -109,7 +110,7 @@
     "WebServerToolWindowFactoryState": "false",
     "code.cleanup.on.save": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "Redis",
+    "git-widget-placeholder": "Cassandra",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/domin/Documents/FTIMS/SEMESTR_V/nierelacyjne_bazy_danych/NBD/NBD/src/main/java/redis",
@@ -145,7 +146,7 @@
       <recent name="C:\Users\habso\Documents\Pl\NBD\NBD\NBD\dockerfiles" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RedisTest">
+  <component name="RunManager" selected="Docker.dockerfiles: Compose Deployment">
     <configuration name="MongoDBTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NBD" />
       <extension name="coverage">
@@ -224,11 +225,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.dockerfiles: Compose Deployment" />
+        <item itemvalue="JUnit.RedisTest.benchmarkTest" />
         <item itemvalue="JUnit.RedisTest" />
         <item itemvalue="JUnit.MongoDBTest" />
         <item itemvalue="JUnit.RedisTest.expireTest" />
-        <item itemvalue="Docker.dockerfiles: Compose Deployment" />
-        <item itemvalue="JUnit.RedisTest.benchmarkTest" />
       </list>
     </recent_temporary>
   </component>
@@ -282,7 +283,9 @@
       <workItem from="1701948483732" duration="5935000" />
       <workItem from="1701954483284" duration="708000" />
       <workItem from="1701955212841" duration="2220000" />
-      <workItem from="1701957846349" duration="4593000" />
+      <workItem from="1701957846349" duration="5660000" />
+      <workItem from="1701966446345" duration="2222000" />
+      <workItem from="1702908909607" duration="808000" />
     </task>
     <servers />
   </component>
