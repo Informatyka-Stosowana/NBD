@@ -1,27 +1,28 @@
 package model;
 
 import com.datastax.oss.driver.api.mapper.annotations.CqlName;
+import com.datastax.oss.driver.api.mapper.annotations.Entity;
 import com.datastax.oss.driver.api.mapper.annotations.PartitionKey;
 
+@Entity(defaultKeyspace = "rent_a_vehicle")
 public class ClientAddress {
     @CqlName("street")
-    final String street;
+    private String street;
     @CqlName("streetNumber")
-    private final int streetNumber;
+    private int streetNumber;
     @CqlName("city")
-    private final String city;
+    private String city;
     @CqlName("postcode")
-    private final int postcode;
+    private int postcode;
     @CqlName("firstName")
-    private final String firstName;
+    private String firstName;
     @PartitionKey
     @CqlName("id")
-    private final int personalId;
+    private int personalId;
     @CqlName("lastName")
-    private final String lastName;
+    private String lastName;
     @CqlName("noRents")
-    private final int noRents;
-
+    private int noRents;
 
     public ClientAddress(int personalId,
                          String firstName,
@@ -41,36 +42,71 @@ public class ClientAddress {
         this.postcode = postcode;
     }
 
+    public ClientAddress() {
+    }
+
     public int getNoRents() {
         return noRents;
+    }
+
+    public void setNoRents(int noRents) {
+        this.noRents = noRents;
     }
 
     public String getStreet() {
         return street;
     }
 
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
     public int getStreetNumber() {
         return streetNumber;
+    }
+
+    public void setStreetNumber(int streetNumber) {
+        this.streetNumber = streetNumber;
     }
 
     public String getCity() {
         return city;
     }
 
+    public void setCity(String city) {
+        this.city = city;
+    }
+
     public int getPostcode() {
         return postcode;
+    }
+
+    public void setPostcode(int postcode) {
+        this.postcode = postcode;
     }
 
     public int getPersonalId() {
         return personalId;
     }
 
+    public void setPersonalId(int personalId) {
+        this.personalId = personalId;
+    }
+
     public String getFirstName() {
         return firstName;
     }
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
     public String getLastName() {
         return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
 }

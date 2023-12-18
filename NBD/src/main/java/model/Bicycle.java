@@ -8,8 +8,7 @@ import com.datastax.oss.driver.api.mapper.annotations.Entity;
 public class Bicycle extends Vehicle {
 
     @CqlName("helperWheels")
-    private final boolean helperWheels;
-
+    private boolean helperWheels;
 
     public Bicycle(String id,
                    int weight,
@@ -22,7 +21,14 @@ public class Bicycle extends Vehicle {
         this.helperWheels = helperWheels;
     }
 
+    public Bicycle() {
+    }
+
     public boolean isHelperWheels() {
         return helperWheels;
+    }
+
+    public void setHelperWheels(boolean helperWheels) {
+        this.helperWheels = helperWheels;
     }
 }

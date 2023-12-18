@@ -33,7 +33,7 @@ public class AbstractCassandraRepository {
     private void initKeyspace() {
         CreateKeyspace keyspace = createKeyspace(CqlIdentifier.fromCql("rent_a_car"))
                 .ifNotExists()
-                .withSimpleStrategy(2)
+                .withSimpleStrategy(3)
                 .withDurableWrites(true);
         SimpleStatement createKeyspace = keyspace.build();
         session.execute(createKeyspace);

@@ -7,10 +7,8 @@ import com.datastax.oss.driver.api.mapper.annotations.Entity;
 @CqlName("vehicles")
 public class Car extends Vehicle {
 
-
     @CqlName("numberOfSeats")
-    private final int numberOfSeats;
-
+    private int numberOfSeats;
 
     public Car(String id,
                int weight,
@@ -23,7 +21,14 @@ public class Car extends Vehicle {
         this.numberOfSeats = numberOfSeats;
     }
 
+    public Car() {
+    }
+
     public int getNumberOfSeats() {
         return numberOfSeats;
+    }
+
+    public void setNumberOfSeats(int numberOfSeats) {
+        this.numberOfSeats = numberOfSeats;
     }
 }

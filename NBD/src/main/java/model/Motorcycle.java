@@ -7,7 +7,7 @@ import com.datastax.oss.driver.api.mapper.annotations.Entity;
 @CqlName("vehicles")
 public class Motorcycle extends Vehicle {
     @CqlName("engineDisplacement")
-    private final int engineDisplacement;
+    private int engineDisplacement;
 
     public Motorcycle(String id,
                       int weight,
@@ -20,7 +20,14 @@ public class Motorcycle extends Vehicle {
         this.engineDisplacement = engineDisplacement;
     }
 
+    public Motorcycle() {
+    }
+
     public int getEngineDisplacement() {
         return engineDisplacement;
+    }
+
+    public void setEngineDisplacement(int engineDisplacement) {
+        this.engineDisplacement = engineDisplacement;
     }
 }
