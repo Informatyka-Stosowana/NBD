@@ -32,7 +32,10 @@
       <user-name>cassandra</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="schema" qname="@" />
+          <node kind="schema">
+            <name qname="@" />
+            <name qname="rent_a_car" />
+          </node>
         </introspection-scope>
       </schema-mapping>
     </data-source>

@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21255cd7-98e6-4e4e-abc1-d513566396e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/storage/ClientCassandraRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/java/Test/CassandraTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/storage/RentCassandraRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/storage/VehicleCassandraRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
@@ -22,26 +22,22 @@
       <change beforePath="$PROJECT_DIR$/NBD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/NBD.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dockerfiles/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/ClientAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ClientAddress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Motorcycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Motorcycle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Rent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Rent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/AbstractCassandraRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/AbstractCassandraRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/AddressTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/AddressTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/ClientMongoRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/ClientRedisRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/RentMongoRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/VehicleMongoRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/Test/MongoDBTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/Test/RedisTest.java" beforeDir="false" />
-    </list>
-    <list id="acb19ce2-05ca-4e97-9177-2e3304964a7a" name="Changes by chuj" comment="" />
-    <list id="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" name="Changes by domin" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Bicycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Bicycle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/ClientAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ClientAddress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Motorcycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Motorcycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Vehicle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/AbstractCassandraRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/AbstractCassandraRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/AddressTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/AddressTranslator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/ClientCassandraRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/ClientCassandraRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/Test/CassandraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/Test/CassandraTest.java" afterDir="false" />
+    </list>
+    <list id="acb19ce2-05ca-4e97-9177-2e3304964a7a" name="Changes by chuj" comment="" />
+    <list id="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" name="Changes by domin" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/ClientAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ClientAddress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Rent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Rent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Vehicle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/application.conf" afterDir="false" />
     </list>
     <list id="e9d55649-76b6-4ff2-9f02-f7625282c2d4" name="Changes by habso" comment="" />
@@ -71,32 +67,36 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/src/main/java/model/Car.java">
       <ranges>
-        <range start1="2" end1="7" start2="2" end2="2" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="8" end1="10" start2="3" end2="5" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="11" end1="18" start2="6" end2="13" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="2" end1="2" start2="2" end2="4" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="4" end1="4" start2="6" end2="7" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="12" end1="14" start2="15" end2="18" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
       </ranges>
     </file>
     <file path="$PROJECT_DIR$/src/main/java/model/ClientAddress.java">
       <ranges>
-        <range start1="1" end1="5" start2="1" end2="1" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="7" end1="18" start2="3" end2="4" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="19" end1="20" start2="5" end2="6" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
-        <range start1="21" end1="22" start2="7" end2="8" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
-        <range start1="23" end1="23" start2="9" end2="13" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
-        <range start1="24" end1="34" start2="14" end2="23" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="2" end1="2" start2="2" end2="5" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="3" end1="3" start2="6" end2="7" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="4" end1="4" start2="8" end2="9" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="5" end1="6" start2="10" end2="11" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="7" end1="8" start2="12" end2="13" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="9" end1="9" start2="14" end2="15" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="10" end1="10" start2="16" end2="18" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="11" end1="11" start2="19" end2="20" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="12" end1="12" start2="21" end2="22" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="32" end1="49" start2="42" end2="42" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
       </ranges>
     </file>
-    <file path="$PROJECT_DIR$/src/main/java/storage/AbstractCassandraRepository.java">
+    <file path="$PROJECT_DIR$/src/main/java/model/Vehicle.java">
       <ranges>
-        <range start1="2" end1="2" start2="2" end2="3" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="3" end1="3" start2="4" end2="7" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="5" end1="5" start2="9" end2="11" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="8" end1="8" start2="14" end2="18" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="11" end1="12" start2="21" end2="22" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="14" end1="15" start2="24" end2="25" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
-        <range start1="16" end1="17" start2="26" end2="26" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="18" end1="18" start2="27" end2="29" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
-        <range start1="19" end1="19" start2="30" end2="47" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="2" end1="2" start2="2" end2="8" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="3" end1="3" start2="9" end2="11" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="4" end1="4" start2="12" end2="13" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="5" end1="5" start2="14" end2="15" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="6" end1="6" start2="16" end2="17" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="7" end1="7" start2="18" end2="19" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="8" end1="8" start2="20" end2="22" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
+        <range start1="13" end1="14" start2="27" end2="29" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="19" end1="19" start2="34" end2="35" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
       </ranges>
     </file>
   </component>
@@ -318,7 +318,7 @@
       <workItem from="1701957846349" duration="5660000" />
       <workItem from="1701966446345" duration="2222000" />
       <workItem from="1702908909607" duration="4673000" />
-      <workItem from="1702913590014" duration="2947000" />
+      <workItem from="1702913590014" duration="5593000" />
     </task>
     <servers />
   </component>

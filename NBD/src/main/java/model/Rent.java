@@ -1,9 +1,15 @@
 package model;
 
+import com.datastax.oss.driver.api.mapper.annotations.CqlName;
+import com.datastax.oss.driver.api.mapper.annotations.PartitionKey;
+
 public class Rent {
     private final ClientAddress client;
     private final Vehicle vehicle;
+    @PartitionKey
+    @CqlName("id")
     private final int id;
+    @CqlName("archive")
     private boolean archive;
 
     public Rent(int id, ClientAddress client, Vehicle vehicle) {

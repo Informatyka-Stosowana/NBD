@@ -1,6 +1,12 @@
 package model;
 
+import com.datastax.oss.driver.api.mapper.annotations.CqlName;
+import com.datastax.oss.driver.api.mapper.annotations.Entity;
+
+@Entity(defaultKeyspace = "rent_a_vehicle")
+@CqlName("vehicles")
 public class Motorcycle extends Vehicle {
+    @CqlName("engineDisplacement")
     private final int engineDisplacement;
 
     public Motorcycle(String id,
@@ -8,8 +14,9 @@ public class Motorcycle extends Vehicle {
                       String color,
                       double price,
                       int engineDisplacement,
-                      int rented) {
-        super(id, weight, color, price, rented);
+                      int rented,
+                      String discriminator) {
+        super(id, weight, color, price, rented, discriminator);
         this.engineDisplacement = engineDisplacement;
     }
 
