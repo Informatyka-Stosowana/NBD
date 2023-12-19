@@ -40,19 +40,16 @@ public class RentDaoImpl__MapperGenerated extends DaoBase implements RentDao {
 
   private final RentQueryProvider updateInvoker;
 
-  private final RentQueryProvider endInvoker;
-
   private RentDaoImpl__MapperGenerated(MapperContext context,
       RentDBHelper__MapperGenerated rentDBHelper, PreparedStatement findByIdStatement,
       PreparedStatement deleteByIdStatement, RentQueryProvider saveInvoker,
-      RentQueryProvider updateInvoker, RentQueryProvider endInvoker) {
+      RentQueryProvider updateInvoker) {
     super(context);
     this.rentDBHelper = rentDBHelper;
     this.findByIdStatement = findByIdStatement;
     this.deleteByIdStatement = deleteByIdStatement;
     this.saveInvoker = saveInvoker;
     this.updateInvoker = updateInvoker;
-    this.endInvoker = endInvoker;
   }
 
   @Override
@@ -72,11 +69,6 @@ public class RentDaoImpl__MapperGenerated extends DaoBase implements RentDao {
   @Override
   public void update(Rent rent) {
     updateInvoker.update(rent);
-  }
-
-  @Override
-  public void end(Rent rent) {
-    endInvoker.end(rent);
   }
 
   @Override
@@ -116,7 +108,6 @@ public class RentDaoImpl__MapperGenerated extends DaoBase implements RentDao {
       // Initialize all method invokers
       RentQueryProvider saveInvoker = new RentQueryProvider(context);
       RentQueryProvider updateInvoker = new RentQueryProvider(context);
-      RentQueryProvider endInvoker = new RentQueryProvider(context);
       // Build the DAO when all statements are prepared
       return CompletableFutures.allSuccessful(prepareStages)
           .thenApply(v -> (RentDao) new RentDaoImpl__MapperGenerated(context,
@@ -124,8 +115,7 @@ public class RentDaoImpl__MapperGenerated extends DaoBase implements RentDao {
               CompletableFutures.getCompleted(findByIdStatement),
               CompletableFutures.getCompleted(deleteByIdStatement),
               saveInvoker,
-              updateInvoker,
-              endInvoker))
+              updateInvoker))
           .toCompletableFuture();
     } catch (Throwable t) {
       return CompletableFutures.failedFuture(t);

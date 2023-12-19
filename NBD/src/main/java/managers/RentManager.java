@@ -43,6 +43,8 @@ public class RentManager {
     public Rent getRent(int id) {
         RentDB rentDB = rentCassandraRepository.getRent(id);
         Rent rent = new Rent();
+        rent.setId(rentDB.getId());
+        rent.setArchive(rentDB.isArchive());
         rent.setClient(clientCassandraRepository.getClient(rentDB.getClientId()));
         rent.setVehicle(vehicleCassandraRepository.getVehicle(rentDB.getVehicleId()));
 

@@ -19,10 +19,6 @@ public interface RentDao {
     @QueryProvider(providerClass = RentQueryProvider.class)
     void update(Rent rent);
 
-    @StatementAttributes(consistencyLevel = "QUORUM")
-    @QueryProvider(providerClass = RentQueryProvider.class)
-    void end(Rent rent);
-
     @Delete(entityClass = RentDB.class)
     void deleteById(int id);
 }

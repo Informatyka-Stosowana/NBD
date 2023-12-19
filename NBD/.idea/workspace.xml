@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21255cd7-98e6-4e4e-abc1-d513566396e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/managers/RentManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/RentDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/queryProviders/RentQueryProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
@@ -25,8 +22,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/ClientDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ClientDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/RentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/RentDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/VehicleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/VehicleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/managers/RentQueryProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/managers/VehicleQueryProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/queryProviders/VehicleQueryProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/managers/RentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/managers/RentManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mapper/ClientMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapper/ClientMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mapper/FromDBVehicleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapper/FromDBVehicleMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mapper/RentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapper/RentMapper.java" afterDir="false" />
@@ -36,35 +32,20 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/model/ClientAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ClientAddress.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Motorcycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Motorcycle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Rent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Rent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/RentDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/RentDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/queryProviders/RentQueryProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/queryProviders/RentQueryProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/queryProviders/VehicleQueryProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/queryProviders/VehicleQueryProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/AbstractCassandraRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/AbstractCassandraRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/AddressTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/AddressTranslator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/ClientCassandraRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/ClientCassandraRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/RentCassandraRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/RentCassandraRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/VehicleCassandraRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/VehicleCassandraRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/dao/ClientDaoImpl__MapperGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/dao/ClientDaoImpl__MapperGenerated.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/dao/RentDaoImpl__MapperGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/dao/RentDaoImpl__MapperGenerated.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/dao/VehicleDaoImpl__MapperGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/dao/VehicleDaoImpl__MapperGenerated.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/mapper/ClientMapperBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/mapper/ClientMapperBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/mapper/ClientMapperImpl__MapperGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/mapper/ClientMapperImpl__MapperGenerated.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/mapper/RentMapperBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/mapper/RentMapperBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/mapper/RentMapperImpl__MapperGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/mapper/RentMapperImpl__MapperGenerated.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/mapper/VehicleMapperBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/mapper/VehicleMapperBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/mapper/VehicleMapperImpl__MapperGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/mapper/VehicleMapperImpl__MapperGenerated.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/BicycleHelper__MapperGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/BicycleHelper__MapperGenerated.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/CarHelper__MapperGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/CarHelper__MapperGenerated.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/ClientAddressHelper__MapperGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/ClientAddressHelper__MapperGenerated.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/MotorcycleHelper__MapperGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/MotorcycleHelper__MapperGenerated.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/RentHelper__MapperGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/RentHelper__MapperGenerated.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/VehicleHelper__MapperGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/VehicleHelper__MapperGenerated.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/java/Test/CassandraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/Test/CassandraTest.java" afterDir="false" />
     </list>
     <list id="acb19ce2-05ca-4e97-9177-2e3304964a7a" name="Changes by chuj" comment="" />
     <list id="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" name="Changes by domin" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/RentCassandraRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/RentCassandraRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/storage/VehicleCassandraRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/VehicleCassandraRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/application.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/java/Test/CassandraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/Test/CassandraTest.java" afterDir="false" />
     </list>
     <list id="e9d55649-76b6-4ff2-9f02-f7625282c2d4" name="Changes by habso" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,38 +71,6 @@
   <component name="KubernetesApiProvider">{
     &quot;isMigrated&quot;: true
     }</component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/test/java/Test/CassandraTest.java">
-      <ranges>
-        <range start1="2" end1="2" start2="2" end2="8" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
-        <range start1="4" end1="4" start2="10" end2="12" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="6" end1="6" start2="14" end2="15" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="7" end1="8" start2="16" end2="29" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
-        <range start1="9" end1="9" start2="30" end2="53" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
-        <range start1="10" end1="10" start2="54" end2="190" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/storage/RentCassandraRepository.java">
-      <ranges>
-        <range start1="4" end1="5" start2="4" end2="4" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="7" end1="7" start2="6" end2="12" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="9" end1="9" start2="14" end2="16" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="13" end1="13" start2="20" end2="22" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="19" end1="28" start2="28" end2="32" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
-        <range start1="30" end1="30" start2="34" end2="50" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/storage/VehicleCassandraRepository.java">
-      <ranges>
-        <range start1="4" end1="5" start2="4" end2="4" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="7" end1="7" start2="6" end2="10" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
-        <range start1="9" end1="9" start2="12" end2="14" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
-        <range start1="13" end1="13" start2="18" end2="20" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
-        <range start1="19" end1="28" start2="26" end2="35" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="30" end1="30" start2="37" end2="54" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
-      </ranges>
-    </file>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -236,7 +185,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CassandraTest.testTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CassandraTest.updateRentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NBD" />
       <extension name="coverage">
         <pattern>
@@ -246,7 +195,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
       <option name="MAIN_CLASS_NAME" value="Test.CassandraTest" />
-      <option name="METHOD_NAME" value="testTest" />
+      <option name="METHOD_NAME" value="updateRentTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -285,10 +234,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CassandraTest" />
+        <item itemvalue="JUnit.CassandraTest.updateRentTest" />
         <item itemvalue="JUnit.CassandraTest.updateVehicleTest" />
         <item itemvalue="JUnit.CassandraTest.addClientTest" />
         <item itemvalue="Docker.dockerfiles: Compose Deployment" />
-        <item itemvalue="JUnit.CassandraTest.testTest" />
       </list>
     </recent_temporary>
   </component>
@@ -346,7 +295,7 @@
       <workItem from="1701966446345" duration="2222000" />
       <workItem from="1702908909607" duration="4673000" />
       <workItem from="1702913590014" duration="5593000" />
-      <workItem from="1703003762665" duration="8535000" />
+      <workItem from="1703003762665" duration="8929000" />
     </task>
     <servers />
   </component>

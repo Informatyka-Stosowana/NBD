@@ -33,7 +33,7 @@ public class RentQueryProvider {
                 .where(Relation.column("id").isEqualTo(literal(rent.getClient().getPersonalId())));
 
         Update updateVehicle = QueryBuilder.update(CqlIdentifier.fromCql("vehicles"))
-                .setColumn("rented", literal(1))
+                .setColumn("rented", literal(rent.getVehicle().isRented()))
                 .where(Relation.column("id").isEqualTo(literal(rent.getVehicle().getId())));
 
         BatchStatement batchStatement = BatchStatement.builder(BatchType.LOGGED)
@@ -57,35 +57,13 @@ public class RentQueryProvider {
                 .where(Relation.column("id").isEqualTo(literal(rent.getClient().getPersonalId())));
 
         Update updateVehicle = QueryBuilder.update(CqlIdentifier.fromCql("vehicles"))
-                .setColumn("rented", literal(1))
+                .setColumn("rented", literal(rent.getVehicle().isRented()))
                 .where(Relation.column("id").isEqualTo(literal(rent.getVehicle().getId())));
 
         BatchStatement batchStatement = BatchStatement.builder(BatchType.LOGGED)
                 .addStatement(updateClient.build())
                 .addStatement(updateVehicle.build())
                 .addStatement(updateRent.build())
-                .build();
-
-        session.execute(batchStatement);
-    }
-
-    public void end(Rent rent) {
-        Update endRent = QueryBuilder.update(CqlIdentifier.fromCql("rents"))
-                .setColumn("archive", literal(true))
-                .where(Relation.column("id").isEqualTo(literal(rent.getId())));
-
-        Update updateClient = QueryBuilder.update(CqlIdentifier.fromCql("clients"))
-                .setColumn("noRents", literal(rent.getClient().getNoRents()))
-                .where(Relation.column("id").isEqualTo(literal(rent.getClient().getPersonalId())));
-
-        Update updateVehicle = QueryBuilder.update(CqlIdentifier.fromCql("vehicles"))
-                .setColumn("rented", literal(false))
-                .where(Relation.column("id").isEqualTo(literal(rent.getVehicle().getId())));
-
-        BatchStatement batchStatement = BatchStatement.builder(BatchType.LOGGED)
-                .addStatement(updateClient.build())
-                .addStatement(updateVehicle.build())
-                .addStatement(endRent.build())
                 .build();
 
         session.execute(batchStatement);
