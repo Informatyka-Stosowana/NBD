@@ -1,10 +1,12 @@
 package model;
 
 import com.datastax.oss.driver.api.mapper.annotations.CqlName;
+import com.datastax.oss.driver.api.mapper.annotations.Entity;
 import com.datastax.oss.driver.api.mapper.annotations.PartitionKey;
 
+@Entity(defaultKeyspace = "rent_a_vehicle")
 @CqlName("vehicles")
-abstract public class Vehicle {
+public class Vehicle {
     @PartitionKey
     @CqlName("id")
     private String id;

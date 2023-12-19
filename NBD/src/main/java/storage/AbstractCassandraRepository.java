@@ -23,7 +23,7 @@ public class AbstractCassandraRepository {
                 .addContactPoint(new InetSocketAddress("cassandra2", 9043))
                 .addContactPoint(new InetSocketAddress("cassandra3", 9044))
                 .withLocalDatacenter("dc1")
-                .withKeyspace(CqlIdentifier.fromCql("rent_a_car"))
+                .withKeyspace(CqlIdentifier.fromCql("rent_a_vehicle"))
                 .withAuthCredentials("cassandra", "cassandrapassword")
                 .build();
 
@@ -31,7 +31,7 @@ public class AbstractCassandraRepository {
     }
 
     private void initKeyspace() {
-        CreateKeyspace keyspace = createKeyspace(CqlIdentifier.fromCql("rent_a_car"))
+        CreateKeyspace keyspace = createKeyspace(CqlIdentifier.fromCql("rent_a_vehicle"))
                 .ifNotExists()
                 .withSimpleStrategy(3)
                 .withDurableWrites(true);
@@ -41,7 +41,7 @@ public class AbstractCassandraRepository {
 
     public void dropKeyspace() {
         session.execute(
-                SchemaBuilder.dropKeyspace(CqlIdentifier.fromCql("rent_a_car"))
+                SchemaBuilder.dropKeyspace(CqlIdentifier.fromCql("rent_a_vehicle"))
                         .ifExists()
                         .build()
         );

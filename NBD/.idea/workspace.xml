@@ -5,24 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21255cd7-98e6-4e4e-abc1-d513566396e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/ClientDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/RentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/VehicleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/managers/RentQueryProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/managers/VehicleQueryProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mapper/ClientMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mapper/FromDBVehicleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mapper/RentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mapper/VehicleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/managers/RentManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/RentDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/queryProviders/RentQueryProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50402a81-22be-421d-8326-5e42e460026d.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50402a81-22be-421d-8326-5e42e460026d/storage_v2/_src_/schema/rentDB.d3lLyA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/50402a81-22be-421d-8326-5e42e460026d/storage_v2/_src_/schema/rentDB.d3lLyA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
@@ -32,6 +22,15 @@
       <change beforePath="$PROJECT_DIR$/NBD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/NBD.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dockerfiles/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/ClientDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/ClientDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/RentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/RentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/VehicleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/VehicleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/managers/RentQueryProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/managers/VehicleQueryProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/queryProviders/VehicleQueryProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mapper/ClientMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapper/ClientMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mapper/FromDBVehicleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapper/FromDBVehicleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mapper/RentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapper/RentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mapper/VehicleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapper/VehicleMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Bicycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Bicycle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/ClientAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ClientAddress.java" afterDir="false" />
@@ -43,18 +42,29 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/ClientCassandraRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/ClientCassandraRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/RentCassandraRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/RentCassandraRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/storage/VehicleCassandraRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/VehicleCassandraRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/dao/ClientDaoImpl__MapperGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/dao/ClientDaoImpl__MapperGenerated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/dao/RentDaoImpl__MapperGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/dao/RentDaoImpl__MapperGenerated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/dao/VehicleDaoImpl__MapperGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/dao/VehicleDaoImpl__MapperGenerated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/mapper/ClientMapperBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/mapper/ClientMapperBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/mapper/ClientMapperImpl__MapperGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/mapper/ClientMapperImpl__MapperGenerated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/mapper/RentMapperBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/mapper/RentMapperBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/mapper/RentMapperImpl__MapperGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/mapper/RentMapperImpl__MapperGenerated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/mapper/VehicleMapperBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/mapper/VehicleMapperBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/mapper/VehicleMapperImpl__MapperGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/mapper/VehicleMapperImpl__MapperGenerated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/BicycleHelper__MapperGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/BicycleHelper__MapperGenerated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/CarHelper__MapperGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/CarHelper__MapperGenerated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/ClientAddressHelper__MapperGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/ClientAddressHelper__MapperGenerated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/MotorcycleHelper__MapperGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/MotorcycleHelper__MapperGenerated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/RentHelper__MapperGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/RentHelper__MapperGenerated.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/annotations/model/VehicleHelper__MapperGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/annotations/model/VehicleHelper__MapperGenerated.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/java/Test/CassandraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/Test/CassandraTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
-    <list id="acb19ce2-05ca-4e97-9177-2e3304964a7a" name="Changes by chuj" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Bicycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Bicycle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/ClientAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/ClientAddress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Rent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Rent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Vehicle.java" afterDir="false" />
-    </list>
+    <list id="acb19ce2-05ca-4e97-9177-2e3304964a7a" name="Changes by chuj" comment="" />
     <list id="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" name="Changes by domin" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/RentCassandraRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/RentCassandraRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/VehicleCassandraRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/storage/VehicleCassandraRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/application.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/Test/CassandraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/Test/CassandraTest.java" afterDir="false" />
     </list>
     <list id="e9d55649-76b6-4ff2-9f02-f7625282c2d4" name="Changes by habso" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,74 +91,34 @@
     &quot;isMigrated&quot;: true
     }</component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/model/ClientAddress.java">
+    <file path="$PROJECT_DIR$/test/java/Test/CassandraTest.java">
       <ranges>
-        <range start1="3" end1="3" start2="3" end2="4" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="5" end1="5" start2="6" end2="7" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="7" end1="8" start2="9" end2="10" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="9" end1="10" start2="11" end2="12" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="11" end1="12" start2="13" end2="14" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="13" end1="14" start2="15" end2="16" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="15" end1="16" start2="17" end2="18" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="18" end1="19" start2="20" end2="21" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="20" end1="21" start2="22" end2="23" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="22" end1="24" start2="24" end2="25" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="42" end1="42" start2="43" end2="46" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="47" end1="47" start2="51" end2="55" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="51" end1="51" start2="59" end2="63" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="55" end1="55" start2="67" end2="71" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="59" end1="59" start2="75" end2="79" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="63" end1="63" start2="83" end2="87" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="67" end1="67" start2="91" end2="95" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="71" end1="71" start2="99" end2="103" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="75" end1="75" start2="107" end2="111" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
+        <range start1="2" end1="2" start2="2" end2="8" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="4" end1="4" start2="10" end2="12" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
+        <range start1="6" end1="6" start2="14" end2="15" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
+        <range start1="7" end1="8" start2="16" end2="29" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="9" end1="9" start2="30" end2="53" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="10" end1="10" start2="54" end2="190" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
       </ranges>
     </file>
-    <file path="$PROJECT_DIR$/src/main/java/model/Bicycle.java">
+    <file path="$PROJECT_DIR$/src/main/java/storage/RentCassandraRepository.java">
       <ranges>
-        <range start1="10" end1="12" start2="10" end2="11" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="23" end1="23" start2="22" end2="25" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="27" end1="27" start2="29" end2="33" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
+        <range start1="4" end1="5" start2="4" end2="4" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
+        <range start1="7" end1="7" start2="6" end2="12" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
+        <range start1="9" end1="9" start2="14" end2="16" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
+        <range start1="13" end1="13" start2="20" end2="22" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
+        <range start1="19" end1="28" start2="28" end2="32" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="30" end1="30" start2="34" end2="50" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
       </ranges>
     </file>
-    <file path="$PROJECT_DIR$/src/main/java/model/Vehicle.java">
+    <file path="$PROJECT_DIR$/src/main/java/storage/VehicleCassandraRepository.java">
       <ranges>
-        <range start1="6" end1="7" start2="6" end2="6" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="8" end1="9" start2="7" end2="9" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="11" end1="12" start2="11" end2="12" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="13" end1="14" start2="13" end2="14" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="15" end1="16" start2="15" end2="16" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="17" end1="18" start2="17" end2="18" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="19" end1="20" start2="19" end2="20" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="21" end1="22" start2="21" end2="22" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="36" end1="36" start2="36" end2="39" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="37" end1="37" start2="40" end2="48" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="41" end1="41" start2="52" end2="56" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="45" end1="45" start2="60" end2="64" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="49" end1="49" start2="68" end2="72" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="53" end1="53" start2="76" end2="80" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="56" end1="56" start2="83" end2="91" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/model/Car.java">
-      <ranges>
-        <range start1="9" end1="10" start2="9" end2="9" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="11" end1="13" start2="10" end2="11" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="24" end1="24" start2="22" end2="25" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="28" end1="28" start2="29" end2="33" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/model/Rent.java">
-      <ranges>
-        <range start1="3" end1="3" start2="3" end2="4" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="5" end1="5" start2="6" end2="7" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="6" end1="8" start2="8" end2="10" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="10" end1="11" start2="12" end2="13" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="20" end1="20" start2="22" end2="25" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="21" end1="28" start2="26" end2="26" changelist="acb19ce2-05ca-4e97-9177-2e3304964a7a" />
-        <range start1="32" end1="32" start2="30" end2="34" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="36" end1="36" start2="38" end2="42" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
-        <range start1="40" end1="40" start2="46" end2="50" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
+        <range start1="4" end1="5" start2="4" end2="4" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
+        <range start1="7" end1="7" start2="6" end2="10" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="9" end1="9" start2="12" end2="14" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="13" end1="13" start2="18" end2="20" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
+        <range start1="19" end1="28" start2="26" end2="35" changelist="21255cd7-98e6-4e4e-abc1-d513566396e3" />
+        <range start1="30" end1="30" start2="37" end2="54" changelist="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" />
       </ranges>
     </file>
   </component>
@@ -179,8 +149,10 @@
     "Docker.singlemongo.mongodb: Compose Deployment.executor": "Run",
     "Docker.singlemongo.redis: Compose Deployment.executor": "Run",
     "Docker.singlemongo: Compose Deployment.executor": "Run",
+    "JUnit.CassandraTest.addClientTest.executor": "Run",
     "JUnit.CassandraTest.executor": "Run",
     "JUnit.CassandraTest.testTest.executor": "Run",
+    "JUnit.CassandraTest.updateVehicleTest.executor": "Run",
     "JUnit.MongoDBTest.executor": "Run",
     "JUnit.RedisTest.addClientTest.executor": "Run",
     "JUnit.RedisTest.benchmarkTest.executor": "Run",
@@ -232,7 +204,7 @@
       <recent name="C:\Users\habso\Documents\Pl\NBD\NBD\NBD\dockerfiles" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CassandraTest.testTest">
+  <component name="RunManager" selected="JUnit.CassandraTest">
     <configuration name="CassandraTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NBD" />
       <extension name="coverage">
@@ -244,6 +216,22 @@
       <option name="PACKAGE_NAME" value="Test" />
       <option name="MAIN_CLASS_NAME" value="Test.CassandraTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CassandraTest.addClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NBD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.CassandraTest" />
+      <option name="METHOD_NAME" value="addClientTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -264,7 +252,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedisTest.benchmarkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CassandraTest.updateVehicleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NBD" />
       <extension name="coverage">
         <pattern>
@@ -273,8 +261,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.RedisTest" />
-      <option name="METHOD_NAME" value="benchmarkTest" />
+      <option name="MAIN_CLASS_NAME" value="Test.CassandraTest" />
+      <option name="METHOD_NAME" value="updateVehicleTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -294,26 +282,13 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="dockerfiles.cassandra1: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="cassandra1" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="dockerfiles/docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CassandraTest" />
-        <item itemvalue="JUnit.CassandraTest.testTest" />
+        <item itemvalue="JUnit.CassandraTest.updateVehicleTest" />
+        <item itemvalue="JUnit.CassandraTest.addClientTest" />
         <item itemvalue="Docker.dockerfiles: Compose Deployment" />
-        <item itemvalue="Docker.dockerfiles.cassandra1: Compose Deployment" />
-        <item itemvalue="JUnit.RedisTest.benchmarkTest" />
+        <item itemvalue="JUnit.CassandraTest.testTest" />
       </list>
     </recent_temporary>
   </component>
@@ -371,6 +346,7 @@
       <workItem from="1701966446345" duration="2222000" />
       <workItem from="1702908909607" duration="4673000" />
       <workItem from="1702913590014" duration="5593000" />
+      <workItem from="1703003762665" duration="8535000" />
     </task>
     <servers />
   </component>

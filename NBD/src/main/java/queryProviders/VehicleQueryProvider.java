@@ -1,4 +1,4 @@
-package managers;
+package queryProviders;
 
 import com.datastax.oss.driver.api.core.CqlIdentifier;
 import com.datastax.oss.driver.api.core.CqlSession;
@@ -18,9 +18,9 @@ import static mapper.FromDBVehicleMapper.*;
 
 public class VehicleQueryProvider {
     private final CqlSession session;
-    private EntityHelper<Car> carEntityHelper;
-    private EntityHelper<Motorcycle> motorcycleEntityHelper;
-    private EntityHelper<Bicycle> bicycleEntityHelper;
+    private final EntityHelper<Car> carEntityHelper;
+    private final EntityHelper<Motorcycle> motorcycleEntityHelper;
+    private final EntityHelper<Bicycle> bicycleEntityHelper;
 
     public VehicleQueryProvider(MapperContext ctx,
                                 EntityHelper<Car> carEntityHelper,

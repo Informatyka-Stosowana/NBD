@@ -1,14 +1,15 @@
 package dao;
 
 import com.datastax.oss.driver.api.mapper.annotations.*;
-import managers.RentQueryProvider;
 import model.Rent;
+import model.RentDB;
+import queryProviders.RentQueryProvider;
 
 @Dao
 public interface RentDao {
     @StatementAttributes(consistencyLevel = "QUORUM")
     @Select
-    Rent findById(int id);
+    RentDB findById(int id);
 
     @StatementAttributes(consistencyLevel = "QUORUM")
     @QueryProvider(providerClass = RentQueryProvider.class)
@@ -16,8 +17,12 @@ public interface RentDao {
 
     @StatementAttributes(consistencyLevel = "QUORUM")
     @QueryProvider(providerClass = RentQueryProvider.class)
+    void update(Rent rent);
+
+    @StatementAttributes(consistencyLevel = "QUORUM")
+    @QueryProvider(providerClass = RentQueryProvider.class)
     void end(Rent rent);
 
-    @Delete(entityClass = Rent.class)
+    @Delete(entityClass = RentDB.class)
     void deleteById(int id);
 }

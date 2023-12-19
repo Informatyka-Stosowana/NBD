@@ -4,11 +4,11 @@ import com.datastax.oss.driver.api.mapper.annotations.Dao;
 import com.datastax.oss.driver.api.mapper.annotations.Delete;
 import com.datastax.oss.driver.api.mapper.annotations.QueryProvider;
 import com.datastax.oss.driver.api.mapper.annotations.StatementAttributes;
-import managers.VehicleQueryProvider;
 import model.Bicycle;
 import model.Car;
 import model.Motorcycle;
 import model.Vehicle;
+import queryProviders.VehicleQueryProvider;
 
 @Dao
 public interface VehicleDao {
@@ -28,7 +28,6 @@ public interface VehicleDao {
                     Bicycle.class})
     void save(Vehicle vehicle);
 
-    // TODO fix this
-    @Delete(entityClass = {Car.class, Bicycle.class, Motorcycle.class})
+    @Delete(entityClass = Vehicle.class)
     void deleteById(String id);
 }

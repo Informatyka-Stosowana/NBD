@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="dataSourceStorageLocal" created-in="IU-232.10227.8">
+  <component name="dataSourceStorageLocal" created-in="IU-233.11799.241">
     <data-source name="MongoDB" uuid="50402a81-22be-421d-8326-5e42e460026d">
       <database-info product="Mongo DB" version="7.0.2" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.18" dbms="MONGO" exact-version="7.0.2" exact-driver-version="1.18" />
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
@@ -25,16 +25,14 @@
     <data-source name="@localhost" uuid="3172ac4c-db96-432d-a7cc-f39032591edf">
       <database-info product="Cassandra" version="4.1.3" jdbc-version="4.2" driver-name="Cassandra JDBC Driver" driver-version="1.4" dbms="CASSANDRA" exact-version="4.1.3" exact-driver-version="1.4">
         <identifier-quote-string>&quot;</identifier-quote-string>
+        <jdbc-catalog-is-schema>true</jdbc-catalog-is-schema>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>cassandra</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="schema">
-            <name qname="@" />
-            <name qname="rent_a_car" />
-          </node>
+          <node kind="schema" qname="rent_a_vehicle" />
         </introspection-scope>
       </schema-mapping>
     </data-source>
