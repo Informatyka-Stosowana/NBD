@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="21255cd7-98e6-4e4e-abc1-d513566396e3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/GenerateUUID/clusterIDGenerator.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dockerfiles/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+    </list>
+    <list id="acb19ce2-05ca-4e97-9177-2e3304964a7a" name="Changes by chuj" comment="" />
+    <list id="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" name="Changes by domin" comment="" />
+    <list id="e9d55649-76b6-4ff2-9f02-f7625282c2d4" name="Changes by habso" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dockerfile" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="KubernetesApiProvider">{
+    &quot;isMigrated&quot;: true
+    }</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+    &quot;associatedIndex&quot;: 0
+    }</component>
+  <component name="ProjectId" id="2WLnZ6jKOmyaxvYLa5W2ARXRm6E" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.dockerfiles.cassandra1: Compose Deployment.executor": "Run",
+    "Docker.dockerfiles.mongo_1: Compose Deployment.executor": "Run",
+    "Docker.dockerfiles.mongo_2: Compose Deployment.executor": "Run",
+    "Docker.dockerfiles.mongo_3: Compose Deployment.executor": "Run",
+    "Docker.dockerfiles.mongoinit: Compose Deployment.executor": "Run",
+    "Docker.dockerfiles: Compose Deployment.executor": "Run",
+    "Docker.redis.redis-stack: Compose Deployment.executor": "Run",
+    "Docker.redis: Compose Deployment.executor": "Run",
+    "Docker.singlemongo.mongodb: Compose Deployment.executor": "Run",
+    "Docker.singlemongo.redis: Compose Deployment.executor": "Run",
+    "Docker.singlemongo: Compose Deployment.executor": "Run",
+    "JUnit.CassandraTest.addClientTest.executor": "Run",
+    "JUnit.CassandraTest.executor": "Run",
+    "JUnit.CassandraTest.testTest.executor": "Run",
+    "JUnit.CassandraTest.updateVehicleTest.executor": "Run",
+    "JUnit.MongoDBTest.executor": "Run",
+    "JUnit.RedisTest.addClientTest.executor": "Run",
+    "JUnit.RedisTest.benchmarkTest.executor": "Run",
+    "JUnit.RedisTest.clearCacheTest.executor": "Run",
+    "JUnit.RedisTest.executor": "Run",
+    "JUnit.RedisTest.expireTest.executor": "Run",
+    "JUnit.RedisTest.noRedisTest.executor": "Run",
+    "JUnit.RedisTest.removeClientsTest.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "code.cleanup.on.save": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "Kafka",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/domin/Documents/FTIMS/SEMESTR_V/nierelacyjne_bazy_danych/NBD/NBD/src/main/java/redis",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.15517241",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql",
+      "mongo",
+      "redis",
+      "cassandra"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="storage" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\domin\Documents\FTIMS\SEMESTR_V\nierelacyjne_bazy_danych\NBD\NBD\src\main\java\redis" />
+      <recent name="C:\Users\habso\Documents\Pl\NBD\NBD\NBD\src\main\resources\META-INF" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\domin\Documents\FTIMS\SEMESTR_V\nierelacyjne_bazy_danych\NBD\NBD\GenerateUUID" />
+      <recent name="C:\Users\domin\Documents\FTIMS\SEMESTR_V\nierelacyjne_bazy_danych\NBD\NBD\dockerfiles" />
+      <recent name="C:\Users\domin\Documents\FTIMS\SEMESTR_V\nierelacyjne_bazy_danych\NBD\NBD\dockerfiles\kafka" />
+      <recent name="C:\Users\habso\Documents\Pl\NBD\NBD\NBD\dockerfiles" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.dockerfiles: Compose Deployment">
+    <configuration name="CassandraTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NBD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.CassandraTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CassandraTest.addClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NBD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.CassandraTest" />
+      <option name="METHOD_NAME" value="addClientTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CassandraTest.updateRentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NBD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.CassandraTest" />
+      <option name="METHOD_NAME" value="updateRentTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CassandraTest.updateVehicleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NBD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.CassandraTest" />
+      <option name="METHOD_NAME" value="updateVehicleTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="dockerfiles: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="dockerfiles/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.dockerfiles: Compose Deployment" />
+        <item itemvalue="JUnit.CassandraTest" />
+        <item itemvalue="JUnit.CassandraTest.updateRentTest" />
+        <item itemvalue="JUnit.CassandraTest.updateVehicleTest" />
+        <item itemvalue="JUnit.CassandraTest.addClientTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-3183f394aec4-7d648f2c" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="21255cd7-98e6-4e4e-abc1-d513566396e3" name="Changes" comment="" />
+      <created>1696520781974</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696520781974</updated>
+      <workItem from="1696520783963" duration="1083000" />
+      <workItem from="1696522369340" duration="341000" />
+      <workItem from="1697475923029" duration="3161000" />
+      <workItem from="1697533903450" duration="3209000" />
+      <workItem from="1697539227747" duration="4127000" />
+      <workItem from="1697551493213" duration="16991000" />
+      <workItem from="1697570436704" duration="215000" />
+      <workItem from="1697638762977" duration="2004000" />
+      <workItem from="1697649199832" duration="2336000" />
+      <workItem from="1697710903715" duration="157000" />
+      <workItem from="1697712896171" duration="7000" />
+      <workItem from="1697718319175" duration="106000" />
+      <workItem from="1697727028846" duration="501000" />
+      <workItem from="1697815932706" duration="945000" />
+      <workItem from="1697816903452" duration="779000" />
+      <workItem from="1699814381264" duration="6394000" />
+      <workItem from="1699867917043" duration="506000" />
+      <workItem from="1699868457363" duration="490000" />
+      <workItem from="1699869084422" duration="927000" />
+      <workItem from="1699893179169" duration="3031000" />
+      <workItem from="1699974706215" duration="13909000" />
+      <workItem from="1700050347025" duration="667000" />
+      <workItem from="1700051993065" duration="128000" />
+      <workItem from="1700145468857" duration="1988000" />
+      <workItem from="1700147487346" duration="1684000" />
+      <workItem from="1700152104922" duration="1641000" />
+      <workItem from="1701791743579" duration="8942000" />
+      <workItem from="1701883799567" duration="799000" />
+      <workItem from="1701884601834" duration="477000" />
+      <workItem from="1701892196672" duration="5292000" />
+      <workItem from="1701897607878" duration="2160000" />
+      <workItem from="1701947144452" duration="1101000" />
+      <workItem from="1701948483732" duration="5935000" />
+      <workItem from="1701954483284" duration="708000" />
+      <workItem from="1701955212841" duration="2220000" />
+      <workItem from="1701957846349" duration="5660000" />
+      <workItem from="1701966446345" duration="2222000" />
+      <workItem from="1702908909607" duration="4673000" />
+      <workItem from="1702913590014" duration="5593000" />
+      <workItem from="1703003762665" duration="8929000" />
+      <workItem from="1704381304538" duration="348000" />
+      <workItem from="1704381664762" duration="649000" />
+      <workItem from="1704382417056" duration="356000" />
+      <workItem from="1704383191126" duration="799000" />
+      <workItem from="1704545570591" duration="792000" />
+      <workItem from="1704563425958" duration="6690000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
