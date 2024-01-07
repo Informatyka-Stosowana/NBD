@@ -89,7 +89,6 @@ services:
       - kafkanet
 
 
-
 volumes:
   kafka1_data:
     driver: local

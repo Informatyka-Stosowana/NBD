@@ -5,8 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21255cd7-98e6-4e4e-abc1-d513566396e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Topic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/KafkaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerfiles/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Producer.java" afterDir="false" />
     </list>
     <list id="acb19ce2-05ca-4e97-9177-2e3304964a7a" name="Changes by chuj" comment="" />
     <list id="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" name="Changes by domin" comment="" />
@@ -88,7 +101,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.15517241",
     "rearrange.code.on.save": "true",
@@ -119,7 +132,7 @@
       <recent name="C:\Users\habso\Documents\Pl\NBD\NBD\NBD\dockerfiles" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.dockerfiles: Compose Deployment">
+  <component name="RunManager" selected="JUnit.KafkaTest.addTopicTest">
     <configuration name="CassandraTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NBD" />
       <extension name="coverage">
@@ -131,22 +144,6 @@
       <option name="PACKAGE_NAME" value="Test" />
       <option name="MAIN_CLASS_NAME" value="Test.CassandraTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CassandraTest.addClientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="NBD" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.CassandraTest" />
-      <option name="METHOD_NAME" value="addClientTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -183,15 +180,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
+    <configuration name="KafkaTest.addTopicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NBD" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="NBD" />
-      <option name="filePath" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="KafkaTest" />
+      <option name="METHOD_NAME" value="addTopicTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -212,11 +206,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.KafkaTest.addTopicTest" />
         <item itemvalue="Docker.dockerfiles: Compose Deployment" />
         <item itemvalue="JUnit.CassandraTest" />
         <item itemvalue="JUnit.CassandraTest.updateRentTest" />
         <item itemvalue="JUnit.CassandraTest.updateVehicleTest" />
-        <item itemvalue="JUnit.CassandraTest.addClientTest" />
       </list>
     </recent_temporary>
   </component>
@@ -284,7 +278,8 @@
       <workItem from="1704578590547" duration="181000" />
       <workItem from="1704578778241" duration="80000" />
       <workItem from="1704578888924" duration="121000" />
-      <workItem from="1704579021732" duration="1364000" />
+      <workItem from="1704579021732" duration="1737000" />
+      <workItem from="1704641378946" duration="10813000" />
     </task>
     <servers />
   </component>
