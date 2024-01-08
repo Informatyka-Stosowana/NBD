@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21255cd7-98e6-4e4e-abc1-d513566396e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Topic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/KafkaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
@@ -16,10 +14,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dockerfiles/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfiles/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Consumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Topic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Topic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/KafkaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/KafkaTest.java" afterDir="false" />
     </list>
     <list id="acb19ce2-05ca-4e97-9177-2e3304964a7a" name="Changes by chuj" comment="" />
     <list id="3c434446-1e1f-49fc-aa7b-e959e3e75d6e" name="Changes by domin" comment="" />
@@ -61,62 +60,62 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.dockerfiles.cassandra1: Compose Deployment.executor": "Run",
-    "Docker.dockerfiles.mongo_1: Compose Deployment.executor": "Run",
-    "Docker.dockerfiles.mongo_2: Compose Deployment.executor": "Run",
-    "Docker.dockerfiles.mongo_3: Compose Deployment.executor": "Run",
-    "Docker.dockerfiles.mongoinit: Compose Deployment.executor": "Run",
-    "Docker.dockerfiles: Compose Deployment.executor": "Run",
-    "Docker.redis.redis-stack: Compose Deployment.executor": "Run",
-    "Docker.redis: Compose Deployment.executor": "Run",
-    "Docker.singlemongo.mongodb: Compose Deployment.executor": "Run",
-    "Docker.singlemongo.redis: Compose Deployment.executor": "Run",
-    "Docker.singlemongo: Compose Deployment.executor": "Run",
-    "JUnit.CassandraTest.addClientTest.executor": "Run",
-    "JUnit.CassandraTest.executor": "Run",
-    "JUnit.CassandraTest.testTest.executor": "Run",
-    "JUnit.CassandraTest.updateVehicleTest.executor": "Run",
-    "JUnit.MongoDBTest.executor": "Run",
-    "JUnit.RedisTest.addClientTest.executor": "Run",
-    "JUnit.RedisTest.benchmarkTest.executor": "Run",
-    "JUnit.RedisTest.clearCacheTest.executor": "Run",
-    "JUnit.RedisTest.executor": "Run",
-    "JUnit.RedisTest.expireTest.executor": "Run",
-    "JUnit.RedisTest.noRedisTest.executor": "Run",
-    "JUnit.RedisTest.removeClientsTest.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "code.cleanup.on.save": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "Kafka",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/domin/Documents/FTIMS/SEMESTR_V/nierelacyjne_bazy_danych/NBD/NBD",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.15517241",
-    "rearrange.code.on.save": "true",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.dockerfiles.cassandra1: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dockerfiles.mongo_1: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dockerfiles.mongo_2: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dockerfiles.mongo_3: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dockerfiles.mongoinit: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dockerfiles: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.redis.redis-stack: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.redis: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.singlemongo.mongodb: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.singlemongo.redis: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.singlemongo: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CassandraTest.addClientTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CassandraTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CassandraTest.testTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CassandraTest.updateVehicleTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MongoDBTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RedisTest.addClientTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RedisTest.benchmarkTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RedisTest.clearCacheTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RedisTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RedisTest.expireTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RedisTest.noRedisTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RedisTest.removeClientsTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Kafka&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/domin/Documents/FTIMS/SEMESTR_V/nierelacyjne_bazy_danych/NBD/NBD&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.15517241&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql",
-      "mongo",
-      "redis",
-      "cassandra"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;,
+      &quot;mongo&quot;,
+      &quot;redis&quot;,
+      &quot;cassandra&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="storage" />
@@ -132,7 +131,7 @@
       <recent name="C:\Users\habso\Documents\Pl\NBD\NBD\NBD\dockerfiles" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.KafkaTest.addTopicTest">
+  <component name="RunManager" selected="JUnit.KafkaTest.consumerTest">
     <configuration name="CassandraTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NBD" />
       <extension name="coverage">
@@ -164,27 +163,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CassandraTest.updateVehicleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="NBD" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.CassandraTest" />
-      <option name="METHOD_NAME" value="updateVehicleTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="KafkaTest.addTopicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NBD" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="KafkaTest" />
       <option name="METHOD_NAME" value="addTopicTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaTest.consumerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NBD" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="KafkaTest" />
+      <option name="METHOD_NAME" value="consumerTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -206,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.KafkaTest.consumerTest" />
         <item itemvalue="JUnit.KafkaTest.addTopicTest" />
         <item itemvalue="Docker.dockerfiles: Compose Deployment" />
         <item itemvalue="JUnit.CassandraTest" />
         <item itemvalue="JUnit.CassandraTest.updateRentTest" />
-        <item itemvalue="JUnit.CassandraTest.updateVehicleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -279,7 +272,10 @@
       <workItem from="1704578778241" duration="80000" />
       <workItem from="1704578888924" duration="121000" />
       <workItem from="1704579021732" duration="1737000" />
-      <workItem from="1704641378946" duration="10813000" />
+      <workItem from="1704641378946" duration="11512000" />
+      <workItem from="1704662789335" duration="717000" />
+      <workItem from="1704705103822" duration="855000" />
+      <workItem from="1704723949604" duration="8448000" />
     </task>
     <servers />
   </component>
