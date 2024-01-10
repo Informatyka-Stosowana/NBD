@@ -5,13 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21255cd7-98e6-4e4e-abc1-d513566396e3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/kafka/KafkaRent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kafka/Producer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/KafkaProducerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/50402a81-22be-421d-8326-5e42e460026d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/50402a81-22be-421d-8326-5e42e460026d.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/50402a81-22be-421d-8326-5e42e460026d/storage_v2/_src_/schema/rentDB.d3lLyA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/50402a81-22be-421d-8326-5e42e460026d/storage_v2/_src_/schema/rentDB.d3lLyA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -108,7 +113,17 @@
       <recent name="C:\Users\habso\Documents\Pl\NBD\NBD\NBD\src\main\resources\META-INF" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MongoDBTest">
+  <component name="RunManager" selected="JUnit.KafkaProducerTest.producerTest">
+    <configuration name="KafkaProducerTest.producerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NBD" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="KafkaProducerTest" />
+      <option name="METHOD_NAME" value="producerTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MongoDBTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NBD" />
       <option name="PACKAGE_NAME" value="" />
@@ -123,16 +138,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MongoDBTest" />
       <option name="METHOD_NAME" value="addRemoveEndRentTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MongoDBTest.addRemoveRentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="NBD" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MongoDBTest" />
-      <option name="METHOD_NAME" value="addRemoveRentTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -166,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.KafkaProducerTest.producerTest" />
         <item itemvalue="JUnit.MongoDBTest" />
         <item itemvalue="JUnit.MongoDBTest.maxNoOfVehicleRentTest" />
         <item itemvalue="JUnit.MongoDBTest.addRemoveEndRentTest" />
         <item itemvalue="JUnit.MongoDBTest.rentVehicleTwiceTest" />
-        <item itemvalue="JUnit.MongoDBTest.addRemoveRentTest" />
       </list>
     </recent_temporary>
   </component>
